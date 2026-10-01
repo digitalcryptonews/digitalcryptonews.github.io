@@ -1,0 +1,8 @@
+# Finality
+
+> Finality reports crypto news: protocol upgrades, network incidents, exchange and stablecoin developments, regulation and the projects shaping blockchain.
+
+## Key pages
+- [Homepage](https://digitalcryptonews.github.io/): latest reporting and analysis.
+- [About](https://digitalcryptonews.github.io/about/): editorial scope, independence, sourcing and corrections.
+- [Archive](https://digitalcryptonews.github.io/archive/): everything published.
