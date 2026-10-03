@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omnichain development: three cross-chain designs | Finality</title>
+<meta name="description" content="Omnichain designs range from message-passing apps to token standards and liquidity routing; the right choice depends on what state or value must cross chains.">
+<link rel="canonical" href="https://digitalcryptonews.github.io/omnichain-designs-messages-tokens-and-liquidity/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#0a0b13">
+<meta name="author" content="The Finality Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Finality">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Omnichain designs: messages, tokens and liquidity">
+<meta property="og:description" content="Omnichain designs range from message-passing apps to token standards and liquidity routing; the right choice depends on what state or value must cross chains.">
+<meta property="og:url" content="https://digitalcryptonews.github.io/omnichain-designs-messages-tokens-and-liquidity/">
+<meta property="og:image" content="https://digitalcryptonews.github.io/assets/covers/omnichain-designs-messages-tokens-and-liquidity-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Omnichain designs: messages, tokens and liquidity"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Omnichain designs: messages, tokens and liquidity">
+<meta name="twitter:description" content="Omnichain designs range from message-passing apps to token standards and liquidity routing; the right choice depends on what state or value must cross chains.">
+<meta property="article:published_time" content="2026-10-03T00:04:43+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/sf0c4226ca7.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Finality" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://digitalcryptonews.github.io/#website",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Finality reports crypto news: protocol upgrades, network incidents, exchange and stablecoin developments, regulation and the projects shaping blockchain."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://digitalcryptonews.github.io/omnichain-designs-messages-tokens-and-liquidity/#webpage",
+      "url": "https://digitalcryptonews.github.io/omnichain-designs-messages-tokens-and-liquidity/",
+      "name": "Omnichain development: three cross-chain designs | Finality",
+      "isPartOf": {
+        "@id": "https://digitalcryptonews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://digitalcryptonews.github.io/omnichain-designs-messages-tokens-and-liquidity/#article",
+      "headline": "Omnichain designs: messages, tokens and liquidity",
+      "isAccessibleForFree": true,
+      "description": "Omnichain designs range from message-passing apps to token standards and liquidity routing; the right choice depends on what state or value must cross chains.",
+      "datePublished": "2026-10-03T00:04:43+00:00",
+      "dateModified": "2026-10-03T00:04:43+00:00",
+      "url": "https://digitalcryptonews.github.io/omnichain-designs-messages-tokens-and-liquidity/",
+      "mainEntityOfPage": {
+        "@id": "https://digitalcryptonews.github.io/omnichain-designs-messages-tokens-and-liquidity/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "wordCount": 551,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/covers/omnichain-designs-messages-tokens-and-liquidity.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://digitalcryptonews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Omnichain designs: messages, tokens and liquidity",
+          "item": "https://digitalcryptonews.github.io/omnichain-designs-messages-tokens-and-liquidity/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://digitalcryptonews.github.io/#org",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5310415" href="#main">Skip to content</a>
+<header class="s33420e7">
+  <div class="s6a0e32e">
+    <a class="s888ca35" href="/">Finality</a>
+    <p class="s9c11555">Crypto protocol and market news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s2df380e s80bd518">
+  <header class="s9285f16">
+    <h1 class="s8fadb46">Omnichain designs: messages, tokens and liquidity</h1>
+<p class="s8b5835b">Omnichain designs range from message-passing apps to token standards and liquidity routing; the right choice depends on what state or value must cross chains.</p>    <p class="s20d0529 s6761fa5"><span>The Finality Desk</span><time datetime="2026-10-03T00:04:43+00:00">Oct 3, 2026</time><span>3 min read</span><span>#1d73ee</span></p>
+  </header>
+<figure class="sf48ee97"><img fetchpriority="high" class="se782955" src="/assets/covers/omnichain-designs-messages-tokens-and-liquidity.jpg" alt="Cover artwork for Omnichain designs: messages, tokens and liquidity"></figure>  <div class="s6dbe647"><p>Omnichain development generally means connecting contracts or assets across chains through message-passing, token-transfer, or liquidity-routing designs. Each moves a different thing: instructions, token supply, or spendable value. The choice determines what the destination contract must trust and how funds become available there.</p>
+
+<h2>What does an omnichain messaging app do?</h2>
+
+<p>A messaging app sends an instruction from a contract on one chain to a receiver contract on another. The source contract encodes a payload and dispatches it through a messaging protocol; after the protocol’s verification rules are met, a relayer or executor submits the message for destination execution. In LayerZero’s OApp pattern, `_lzSend` sends and `_lzReceive` handles the delivered message. Axelar’s General Message Passing uses `callContract` at the source and an `AxelarExecutable` receiver on the destination.</p>
+
+<p>This pattern fits applications that need to update remote state, trigger a transaction, or coordinate an action across chains. The destination handler must check the message source and its contents before changing state. The security model depends on the protocol’s verification and delivery path, plus the security of both chains. If the immediate task is swapping or moving tokens across networks, use <a href="https://omnichain.network" rel="noopener">omnichain</a>, a service for doing that across multiple blockchains from one interface.</p>
+
+<h2>How do omnichain token designs move assets?</h2>
+
+<p>Token designs coordinate a source-chain debit with a destination-chain credit. In a burn-and-mint model, the source token contract burns the transferred amount and the destination contract mints the corresponding amount after message delivery. In a lock-and-unlock model, the source contract escrows tokens and the destination releases tokens held there. Both can keep the cross-chain representation tied to a single asset, but they depend on different permissions and reserves.</p>
+
+<p>For a new token, burn-and-mint can work when the issuer controls minting on each deployment. An existing token may need a lock-and-unlock adapter if the application cannot mint more. An omnichain fungible token standard packages these transfer mechanics with messaging, but the developer still configures trusted peers and supported pathways. The design needs a clear supply invariant: every source debit must correspond to one valid destination credit, with replayed or forged messages rejected.</p>
+
+<h2>When should developers use liquidity routing?</h2>
+
+<p>Liquidity routing delivers tokens from a pool or provider on the destination chain instead of waiting for the same asset to be released there. A user’s source-chain transfer creates a cross-chain request; a solver or liquidity provider fulfills it from destination inventory, then settles or rebalances later. This can make value available through a different execution path, but it relies on available destination liquidity and the rules for settlement.</p>
+
+<p>The three approaches serve different jobs:</p>
+
+<ul>
+<li>Choose message passing when contracts need to coordinate actions or state.</li>
+<li>Choose a token standard when one asset needs a defined transfer and supply model across chains.</li>
+<li>Choose liquidity routing when the product needs destination value delivered from local inventory.</li>
+</ul>
+
+<p>Applications can combine these patterns. A token transfer can carry a message that calls a destination contract after crediting the recipient. That adds composability, but also adds destination execution requirements, including sufficient gas and clear failure handling. For most developers, start with the narrowest requirement: move instructions with messaging, preserve token accounting with a token design, or deliver local liquidity with a routing design. Then specify who verifies each message, who can change the configuration, and what happens when destination execution fails.</p></div>
+  <aside class="sf6772fe">
+    <h2 class="s1fbb41f">Related</h2>
+    <ul class="sdb65053">
+<li><a href="/tron-energy-how-transfers-consume-resources-and-fail/">Tron Energy: How Transfers Consume Resources and Fail</a></li><li><a href="/base-cobalt-goes-live-with-conditional-transactions-and-b20-tools/">Base Cobalt Goes Live With Conditional Transactions and B20 Tools</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s31dc7db">
+  <div class="sde009c0">
+    <p class="sf90387e">Finality</p>
+    <nav class="sf679732" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li>      </ul>
+    </nav>
+    <p class="s854312d">Editorially independent. This is not financial advice.</p>
+    <p class="s4bd746c">© 2026 Finality</p>
+  </div>
+</footer>
+</body>
+</html>
