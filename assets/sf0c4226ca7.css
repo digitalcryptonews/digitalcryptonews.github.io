@@ -776,7 +776,8 @@ html, body{max-width:100%; overflow-x:hidden}
 main img, main svg, main video, main iframe, main table{max-width:100% !important}
 
 main > :not(.s2df380e):not(:has(.s2df380e)){padding-inline:clamp(1rem, 4vw, 2.4rem); box-sizing:border-box}
-header > :not(.s2df380e):not(:has(.s2df380e)), footer > :not(.s2df380e):not(:has(.s2df380e)){padding-inline:clamp(1rem, 4vw, 2.4rem); box-sizing:border-box}
+
+body > header > :not(.s2df380e):not(:has(.s2df380e)), body > footer > :not(.s2df380e):not(:has(.s2df380e)){padding-inline:clamp(1rem, 4vw, 2.4rem); box-sizing:border-box}
 main h1, main h2, main h3{overflow-wrap:anywhere; max-width:100%}
 
 .s6dbe647 a, footer a{background-image:none !important}
