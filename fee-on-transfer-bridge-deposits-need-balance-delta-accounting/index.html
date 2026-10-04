@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fee-on-Transfer Bridge Deposit Accounting | Finality</title>
+<meta name="description" content="A bridge should credit the tokens its contract actually receives, then carry that measured amount through messaging, minting, and withdrawal accounting without overstating collateral.">
+<link rel="canonical" href="https://digitalcryptonews.github.io/fee-on-transfer-bridge-deposits-need-balance-delta-accounting/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#0a0b13">
+<meta name="author" content="The Finality Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Finality">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Fee-on-Transfer Bridge Deposits Need Balance-Delta Accounting">
+<meta property="og:description" content="A bridge should credit the tokens its contract actually receives, then carry that measured amount through messaging, minting, and withdrawal accounting without overstating collateral.">
+<meta property="og:url" content="https://digitalcryptonews.github.io/fee-on-transfer-bridge-deposits-need-balance-delta-accounting/">
+<meta property="og:image" content="https://digitalcryptonews.github.io/assets/covers/fee-on-transfer-bridge-deposits-need-balance-delta-accounting-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fee-on-Transfer Bridge Deposits Need Balance-Delta Accounting"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fee-on-Transfer Bridge Deposits Need Balance-Delta Accounting">
+<meta name="twitter:description" content="A bridge should credit the tokens its contract actually receives, then carry that measured amount through messaging, minting, and withdrawal accounting without overstating collateral.">
+<meta property="article:published_time" content="2026-10-04T05:34:03+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/sf0c4226ca7.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Finality" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://digitalcryptonews.github.io/#website",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Finality reports crypto news: protocol upgrades, network incidents, exchange and stablecoin developments, regulation and the projects shaping blockchain."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://digitalcryptonews.github.io/fee-on-transfer-bridge-deposits-need-balance-delta-accounting/#webpage",
+      "url": "https://digitalcryptonews.github.io/fee-on-transfer-bridge-deposits-need-balance-delta-accounting/",
+      "name": "Fee-on-Transfer Bridge Deposit Accounting | Finality",
+      "isPartOf": {
+        "@id": "https://digitalcryptonews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://digitalcryptonews.github.io/fee-on-transfer-bridge-deposits-need-balance-delta-accounting/#article",
+      "headline": "Fee-on-Transfer Bridge Deposits Need Balance-Delta Accounting",
+      "isAccessibleForFree": true,
+      "description": "A bridge should credit the tokens its contract actually receives, then carry that measured amount through messaging, minting, and withdrawal accounting without overstating collateral.",
+      "datePublished": "2026-10-04T05:34:03+00:00",
+      "dateModified": "2026-10-04T05:34:03+00:00",
+      "url": "https://digitalcryptonews.github.io/fee-on-transfer-bridge-deposits-need-balance-delta-accounting/",
+      "mainEntityOfPage": {
+        "@id": "https://digitalcryptonews.github.io/fee-on-transfer-bridge-deposits-need-balance-delta-accounting/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "wordCount": 839,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/fee-on-transfer-bridge-deposits-need-balance-delta-accounting-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/fee-on-transfer-bridge-deposits-need-balance-delta-accounting-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/fee-on-transfer-bridge-deposits-need-balance-delta-accounting-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://digitalcryptonews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Fee-on-Transfer Bridge Deposits Need Balance-Delta Accounting",
+          "item": "https://digitalcryptonews.github.io/fee-on-transfer-bridge-deposits-need-balance-delta-accounting/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://digitalcryptonews.github.io/#org",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5310415" href="#main">Skip to content</a>
+<header class="s33420e7">
+  <div class="s6a0e32e">
+    <a class="s888ca35" href="/">Finality</a>
+    <p class="s9c11555">Crypto protocol and market news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s2df380e s80bd518">
+  <header class="s9285f16">
+    <h1 class="s8fadb46">Fee-on-Transfer Bridge Deposits Need Balance-Delta Accounting</h1>
+<p class="s8b5835b">A bridge should credit the tokens its contract actually receives, then carry that measured amount through messaging, minting, and withdrawal accounting without overstating collateral.</p>    <p class="s20d0529 s6761fa5"><span>The Finality Desk</span><time datetime="2026-10-04T05:34:03+00:00">Oct 4, 2026</time><span>5 min read</span><span>#e4a445</span></p>
+  </header>
+<figure class="sf48ee97"><img fetchpriority="high" class="se782955" src="/assets/covers/fee-on-transfer-bridge-deposits-need-balance-delta-accounting.jpg" alt="Cover artwork for Fee-on-Transfer Bridge Deposits Need Balance-Delta Accounting"></figure>  <div class="s6dbe647"><p>A bridge handling a fee-on-transfer token should account for the balance increase its deposit contract actually receives, not the amount passed to <code>transferFrom</code>. The caller’s requested amount can exceed the bridge’s new collateral because the token deducts a fee during the transfer. If the bridge messages or mints against the request, its destination-side liability can exceed the assets backing it.</p>
+
+<p>This distinction starts at the source-chain deposit. An ERC-20 <code>transferFrom(address,address,uint256)</code> call takes an amount argument, but a token with transfer fees can credit the recipient with less. The bridge can measure the difference between its <code>balanceOf</code> before and after the call, then use that delta as the deposit amount. A fuller explanation of the <a href="https://graph.org/What-Is-Mantle-Bridge-and-How-Does-It-Work-From-a-Wallet-10-02" rel="noopener">Mantle Bridge’s wallet-to-bridge path</a> provides context for where that accounting step sits in a cross-chain transfer.</p>
+
+<h2>Why can the requested deposit differ from the amount received?</h2>
+
+<p>A fee-on-transfer token changes the balances affected by a transfer according to its own contract logic. A user can approve and request a deposit of 100 tokens, while the bridge’s balance rises by 98 after the token deducts a fee. The exact result depends on the token: its fee may be burned, sent to a fee recipient, or calculated under other token-specific rules.</p>
+
+<p>The ERC-20 interface does not give the bridge a standard fee field or a standard “net received” return value. A successful call means the token call did not revert; it does not mean the bridge received the argument amount. A <code>Transfer</code> event is useful for tracing activity, but it may not represent a single transfer of the requested amount when a token emits separate events for the recipient and fee. The bridge’s own balance change is the relevant quantity for its collateral accounting, provided the token’s <code>balanceOf</code> is trustworthy.</p>
+
+<h2>How should the bridge calculate and record the deposit?</h2>
+
+<p>The deposit function should read the bridge’s token balance, call <code>safeTransferFrom</code>, read the balance again, and calculate the difference. It should validate that difference before recording the deposit or sending a cross-chain message. The amount in the deposit record and message must match the received delta, rather than the user’s requested amount.</p>
+
+<ul>
+<li>Use the token’s balance immediately before the transfer as the baseline.</li>
+<li>Pull the requested amount with <code>transferFrom</code>, handling tokens that return no value as well as those that return a boolean.</li>
+<li>Read the balance again and subtract the baseline to find the amount received.</li>
+<li>Use that measured amount for the deposit event, relay payload, and destination-side credit.</li>
+</ul>
+
+<p>For a lock-and-mint bridge, the measured amount defines how much the bridge can safely represent on the destination chain. If the source contract receives 98 tokens, minting 100 wrapped tokens creates a two-token shortfall. If the destination representation also charges a fee when it is transferred to the recipient, the recipient may receive less than the amount minted; that is a separate transfer effect and should be made clear in the bridge’s accounting and user-facing amount.</p>
+
+<p>For a burn-and-mint design, the same accounting question applies even though the source token is burned rather than held as escrow. The bridge must establish which amount the source contract actually accepts or burns and keep the destination mint amount consistent with that quantity. A fee charged during a user-to-bridge transfer cannot be ignored merely because the bridge later burns tokens.</p>
+
+<h2>What edge cases can break balance-delta accounting?</h2>
+
+<p>Balance-delta measurement is only as reliable as the token behavior it measures. Rebasing tokens can change balances outside a transfer, and reflection mechanics can credit holders as a side effect of activity elsewhere. A token could also return misleading values from <code>balanceOf</code> or behave differently when the bridge itself is the sender or recipient. The measured delta is therefore a sound accounting method for supported tokens, not a guarantee that every token can be bridged safely.</p>
+
+<p>The bridge should define a token policy and enforce it at the deposit boundary. It can reject a zero received delta, enforce a minimum net amount supplied by the depositor, and use a reentrancy guard around the transfer and state update. If the bridge calls another contract or dispatches a message before recording the measured amount, a callback or failure path can leave the accounting inconsistent. The deposit record, emitted bridge event, and outbound message should all derive from the same validated delta.</p>
+
+<p>Withdrawals need their own explicit rule. If the bridge unlocks a fee-on-transfer token by requesting 98 tokens, the recipient may receive less than 98, while the bridge’s balance falls by 98. The bridge should define whether its withdrawal amount means the gross amount debited from its reserve or the expected net amount delivered, then account for the token’s transfer fee accordingly. Deposit-side measurement alone does not settle that distinction.</p>
+
+<p>The practical rule is straightforward: measure what enters, and base the cross-chain credit on that amount. Then define outbound amounts according to whether the bridge promises a gross debit or a net receipt. That keeps the collateral ledger aligned with the token’s actual behavior and makes the remaining fee visible in the transfer’s terms.</p></div>
+  <aside class="sf6772fe">
+    <h2 class="s1fbb41f">Related</h2>
+    <ul class="sdb65053">
+<li><a href="/check-a-base-token-before-you-swap/">Check a Base Token Before You Swap</a></li><li><a href="/what-a-contract-energy-ratio-actually-controls/">What a Contract Energy Ratio Actually Controls</a></li><li><a href="/how-an-avalanche-treasury-should-set-swap-slippage/">How an Avalanche Treasury Should Set Swap Slippage</a></li><li><a href="/check-whether-a-chart-export-preserves-timeframe-and-zoom/">Check Whether a Chart Export Preserves Timeframe and Zoom</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s31dc7db">
+  <div class="sde009c0">
+    <p class="sf90387e">Finality</p>
+    <nav class="sf679732" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li>      </ul>
+    </nav>
+    <p class="s854312d">Editorially independent. This is not financial advice.</p>
+    <p class="s4bd746c">© 2026 Finality</p>
+  </div>
+</footer>
+</body>
+</html>
