@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polygon Bridge Withdrawal Time: Checkpoints and Claims</title>
+<meta name="description" content="A Polygon PoS withdrawal waits for a validator checkpoint on Ethereum, then a separate exit call; checkpoint cadence, Ethereum inclusion and user action set the total time.">
+<link rel="canonical" href="https://digitalcryptonews.github.io/why-polygon-pos-bridge-withdrawals-take-hours/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#0a0b13">
+<meta name="author" content="The Finality Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Finality">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why Polygon PoS Bridge Withdrawals Take Hours">
+<meta property="og:description" content="A Polygon PoS withdrawal waits for a validator checkpoint on Ethereum, then a separate exit call; checkpoint cadence, Ethereum inclusion and user action set the total time.">
+<meta property="og:url" content="https://digitalcryptonews.github.io/why-polygon-pos-bridge-withdrawals-take-hours/">
+<meta property="og:image" content="https://digitalcryptonews.github.io/assets/covers/why-polygon-pos-bridge-withdrawals-take-hours-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Polygon PoS Bridge Withdrawals Take Hours"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Polygon PoS Bridge Withdrawals Take Hours">
+<meta name="twitter:description" content="A Polygon PoS withdrawal waits for a validator checkpoint on Ethereum, then a separate exit call; checkpoint cadence, Ethereum inclusion and user action set the total time.">
+<meta property="article:published_time" content="2026-10-04T15:18:32+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/sf0c4226ca7.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Finality" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://digitalcryptonews.github.io/#website",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Finality reports crypto news: protocol upgrades, network incidents, exchange and stablecoin developments, regulation and the projects shaping blockchain."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://digitalcryptonews.github.io/why-polygon-pos-bridge-withdrawals-take-hours/#webpage",
+      "url": "https://digitalcryptonews.github.io/why-polygon-pos-bridge-withdrawals-take-hours/",
+      "name": "Polygon Bridge Withdrawal Time: Checkpoints and Claims",
+      "isPartOf": {
+        "@id": "https://digitalcryptonews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://digitalcryptonews.github.io/why-polygon-pos-bridge-withdrawals-take-hours/#article",
+      "headline": "Why Polygon PoS Bridge Withdrawals Take Hours",
+      "isAccessibleForFree": true,
+      "description": "A Polygon PoS withdrawal waits for a validator checkpoint on Ethereum, then a separate exit call; checkpoint cadence, Ethereum inclusion and user action set the total time.",
+      "datePublished": "2026-10-04T15:18:32+00:00",
+      "dateModified": "2026-10-04T15:18:32+00:00",
+      "url": "https://digitalcryptonews.github.io/why-polygon-pos-bridge-withdrawals-take-hours/",
+      "mainEntityOfPage": {
+        "@id": "https://digitalcryptonews.github.io/why-polygon-pos-bridge-withdrawals-take-hours/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "wordCount": 867,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/why-polygon-pos-bridge-withdrawals-take-hours-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/why-polygon-pos-bridge-withdrawals-take-hours-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/why-polygon-pos-bridge-withdrawals-take-hours-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://digitalcryptonews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Polygon PoS Bridge Withdrawals Take Hours",
+          "item": "https://digitalcryptonews.github.io/why-polygon-pos-bridge-withdrawals-take-hours/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://digitalcryptonews.github.io/#org",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5310415" href="#main">Skip to content</a>
+<header class="s33420e7">
+  <div class="s6a0e32e">
+    <a class="s888ca35" href="/">Finality</a>
+    <p class="s9c11555">Crypto protocol and market news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s2df380e s80bd518">
+  <header class="s9285f16">
+    <h1 class="s8fadb46">Why Polygon PoS Bridge Withdrawals Take Hours</h1>
+<p class="s8b5835b">A Polygon PoS withdrawal waits for a validator checkpoint on Ethereum, then a separate exit call; checkpoint cadence, Ethereum inclusion and user action set the total time.</p>    <p class="s20d0529 s6761fa5"><span>The Finality Desk</span><time datetime="2026-10-04T15:18:32+00:00">Oct 4, 2026</time><span>5 min read</span><span>#606bb2</span></p>
+  </header>
+<figure class="sf48ee97"><img fetchpriority="high" class="se782955" src="/assets/covers/why-polygon-pos-bridge-withdrawals-take-hours.jpg" alt="Cover artwork for Why Polygon PoS Bridge Withdrawals Take Hours"></figure>  <div class="s6dbe647"><p>A Polygon PoS withdrawal takes hours because the Ethereum release depends on a validator checkpoint that covers the burn transaction. The burn happens on Polygon first. Heimdall validators periodically commit a Merkle root of Polygon blocks to Ethereum, and the withdrawal cannot be proved until that root includes the burn’s block. The checkpoint interval is 5,120 Polygon blocks, so a withdrawal can wait a substantial part of that interval before Ethereum can verify it.</p>
+
+<p>This is a two-transaction exit path, not a single transfer that stays pending on one chain. The Polygon transaction burns the bridged token; a later Ethereum transaction submits proof and releases the mapped asset. A fuller comparison of <a href="https://aadambyqb141469.tblogz.com/which-polygon-bridge-route-fits-treasury-transfers-56481061" rel="noopener">Polygon Bridge routes for treasury transfers</a> helps distinguish that native path from routes that use liquidity or another bridge design.</p>
+
+<h2>What happens after the Polygon burn?</h2>
+
+<p>The burn removes the Polygon representation of the asset, but it does not itself unlock the Ethereum token. For a standard mapped token, the user calls the child token’s <code>withdraw(uint256)</code> function on Polygon. That transaction emits the event the bridge uses to identify the withdrawal. The funds are now in the exit process, awaiting an Ethereum-verifiable commitment to the Polygon block that contains the event.</p>
+
+<p>Heimdall validators assemble Polygon block data into a checkpoint and submit it to Ethereum. The checkpoint commits a Merkle root, which lets the bridge verify that a particular block and burn receipt belong to the committed history without replaying every Polygon transaction on Ethereum. The checkpoint contract records that commitment. Once the burn’s block is covered, the withdrawal proof can be built against it.</p>
+
+<p>The user or bridge interface then submits the proof through <code>RootChainManager.exit(bytes)</code> on Ethereum. The relevant predicate verifies the exit and releases the asset held on Ethereum. Until that call is included, the withdrawal may appear ready for action while the Ethereum balance has not yet changed. The claim transaction also requires ETH for gas and a successful Ethereum inclusion.</p>
+
+<h2>Why does the checkpoint make the wait variable?</h2>
+
+<p>The checkpoint interval creates the main timing uncertainty. A burn just after a checkpoint starts waiting for most of the next interval; one shortly before a checkpoint may be eligible sooner. Polygon PoS checkpoints cover 5,120 blocks. At roughly 1.5 seconds per block, that interval spans a little over two hours of block production, though the wall-clock wait also depends on checkpoint processing and Ethereum inclusion.</p>
+
+<p>The interval is a target cadence, not a countdown shown on the burn transaction. Block production can vary. Heimdall must make progress, validators must submit the checkpoint, and Ethereum must include it. Any delay in those steps extends the wait. Afterward, a separate exit transaction still has to be submitted and included. Ethereum congestion can slow that last step even when the checkpoint is already available.</p>
+
+<p>That separation is a security and cost trade-off. Polygon executes transactions without asking Ethereum to verify each one individually. The checkpoint lets the Ethereum bridge accept a compact commitment to Polygon’s history, while the proof ties the user’s withdrawal to that history. The bridge avoids putting every Polygon transaction on Ethereum, but withdrawals inherit the checkpoint schedule and the cost of a second chain transaction.</p>
+
+<h2>What should you check when a withdrawal stalls?</h2>
+
+<p>Check the state of each stage before sending another transaction. A completed burn is not a failed withdrawal simply because the asset has not appeared on Ethereum. The next step depends on whether the burn is checkpointed and whether the Ethereum exit has been submitted.</p>
+
+<ul>
+<li><strong>Burn transaction:</strong> Confirm it succeeded on Polygon and identify its block. A failed or reverted burn did not start the exit.</li>
+<li><strong>Checkpoint:</strong> Check whether an Ethereum checkpoint covers that Polygon block. If not, the bridge is still waiting for the commitment.</li>
+<li><strong>Exit claim:</strong> If the checkpoint exists, check whether <code>RootChainManager.exit(bytes)</code> has been submitted and confirmed on Ethereum.</li>
+<li><strong>Wallet and gas:</strong> Confirm the claim uses the wallet that controls the withdrawal and that it has enough ETH for Ethereum gas.</li>
+</ul>
+
+<p>A prolonged wait can point to a stalled checkpoint pipeline, an unavailable proof service, or an Ethereum transaction that was never sent or confirmed. These are distinct failure points; repeating the Polygon burn does not advance an existing exit. The bridge’s status page or transaction explorer should show whether the process is awaiting a checkpoint or an Ethereum claim.</p>
+
+<h2>Does every Polygon withdrawal use this path?</h2>
+
+<p>No. “Polygon Bridge” can refer to different routes, and the timing depends on the route and asset. The checkpoint-and-exit sequence described here is the Polygon PoS bridge path for mapped assets. Some assets, including native POL, use a Plasma withdrawal path rather than the standard PoS token mapping, so its contract sequence and exit rules differ. A third-party route may also front liquidity on Ethereum and settle separately, changing how quickly the user receives funds and what trust or fee assumptions apply.</p>
+
+<p>For the standard PoS route, hours are the consequence of batching Polygon history into checkpoints, then requiring a proof-backed Ethereum claim. The practical estimate depends first on the next checkpoint covering the burn, then on Ethereum inclusion and the user submitting the exit. A burn receipt alone is not evidence that the Ethereum release has completed.</p></div>
+  <aside class="sf6772fe">
+    <h2 class="s1fbb41f">Related</h2>
+    <ul class="sdb65053">
+<li><a href="/coinbase-clearing-completes-its-cftc-regulated-derivatives-stack/">Coinbase Clearing completes its CFTC-regulated derivatives stack</a></li><li><a href="/three-checks-for-a-polygon-pos-withdrawal-that-is-waiting/">Three Checks for a Polygon PoS Withdrawal That Is Waiting</a></li><li><a href="/when-an-ethereum-deposit-to-manta-pacific-is-stuck/">When an Ethereum Deposit to Manta Pacific Is Stuck</a></li><li><a href="/convert-base-airdrops-to-stablecoins-at-the-right-point/">Convert Base Airdrops to Stablecoins at the Right Point</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s31dc7db">
+  <div class="sde009c0">
+    <p class="sf90387e">Finality</p>
+    <nav class="sf679732" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li>      </ul>
+    </nav>
+    <p class="s854312d">Editorially independent. This is not financial advice.</p>
+    <p class="s4bd746c">© 2026 Finality</p>
+  </div>
+</footer>
+</body>
+</html>
