@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ethereum Deposit Log: Verify a Polygon Bridge Transfer</title>
+<meta name="description" content="An Ethereum receipt proves contract execution, not Polygon credit: identify the bridge event, verify its emitter and arguments, then check the destination chain before switching.">
+<link rel="canonical" href="https://digitalcryptonews.github.io/read-the-ethereum-deposit-log-before-you-switch-chains/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#0a0b13">
+<meta name="author" content="The Finality Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Finality">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Read the Ethereum Deposit Log Before You Switch Chains">
+<meta property="og:description" content="An Ethereum receipt proves contract execution, not Polygon credit: identify the bridge event, verify its emitter and arguments, then check the destination chain before switching.">
+<meta property="og:url" content="https://digitalcryptonews.github.io/read-the-ethereum-deposit-log-before-you-switch-chains/">
+<meta property="og:image" content="https://digitalcryptonews.github.io/assets/covers/read-the-ethereum-deposit-log-before-you-switch-chains-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Read the Ethereum Deposit Log Before You Switch Chains"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Read the Ethereum Deposit Log Before You Switch Chains">
+<meta name="twitter:description" content="An Ethereum receipt proves contract execution, not Polygon credit: identify the bridge event, verify its emitter and arguments, then check the destination chain before switching.">
+<meta property="article:published_time" content="2026-10-05T03:23:10+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/sf0c4226ca7.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Finality" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://digitalcryptonews.github.io/#website",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Finality reports crypto news: protocol upgrades, network incidents, exchange and stablecoin developments, regulation and the projects shaping blockchain."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://digitalcryptonews.github.io/read-the-ethereum-deposit-log-before-you-switch-chains/#webpage",
+      "url": "https://digitalcryptonews.github.io/read-the-ethereum-deposit-log-before-you-switch-chains/",
+      "name": "Ethereum Deposit Log: Verify a Polygon Bridge Transfer",
+      "isPartOf": {
+        "@id": "https://digitalcryptonews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://digitalcryptonews.github.io/read-the-ethereum-deposit-log-before-you-switch-chains/#article",
+      "headline": "Read the Ethereum Deposit Log Before You Switch Chains",
+      "isAccessibleForFree": true,
+      "description": "An Ethereum receipt proves contract execution, not Polygon credit: identify the bridge event, verify its emitter and arguments, then check the destination chain before switching.",
+      "datePublished": "2026-10-05T03:23:10+00:00",
+      "dateModified": "2026-10-05T03:23:10+00:00",
+      "url": "https://digitalcryptonews.github.io/read-the-ethereum-deposit-log-before-you-switch-chains/",
+      "mainEntityOfPage": {
+        "@id": "https://digitalcryptonews.github.io/read-the-ethereum-deposit-log-before-you-switch-chains/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "wordCount": 727,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/read-the-ethereum-deposit-log-before-you-switch-chains-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/read-the-ethereum-deposit-log-before-you-switch-chains-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/read-the-ethereum-deposit-log-before-you-switch-chains-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://digitalcryptonews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Read the Ethereum Deposit Log Before You Switch Chains",
+          "item": "https://digitalcryptonews.github.io/read-the-ethereum-deposit-log-before-you-switch-chains/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://digitalcryptonews.github.io/#org",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5310415" href="#main">Skip to content</a>
+<header class="s33420e7">
+  <div class="s6a0e32e">
+    <a class="s888ca35" href="/">Finality</a>
+    <p class="s9c11555">Crypto protocol and market news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s2df380e s80bd518">
+  <header class="s9285f16">
+    <h1 class="s8fadb46">Read the Ethereum Deposit Log Before You Switch Chains</h1>
+<p class="s8b5835b">An Ethereum receipt proves contract execution, not Polygon credit: identify the bridge event, verify its emitter and arguments, then check the destination chain before switching.</p>    <p class="s20d0529 s6761fa5"><span>The Finality Desk</span><time datetime="2026-10-05T03:23:10+00:00">Oct 5, 2026</time><span>4 min read</span><span>#f88bc7</span></p>
+  </header>
+<figure class="sf48ee97"><img fetchpriority="high" class="se782955" src="/assets/covers/read-the-ethereum-deposit-log-before-you-switch-chains.jpg" alt="Cover artwork for Read the Ethereum Deposit Log Before You Switch Chains"></figure>  <div class="s6dbe647"><p>Read the Ethereum transaction receipt and confirm the bridge’s deposit event before switching networks; a successful receipt alone does not prove that Polygon credited the destination account. For a Polygon PoS ERC-20 deposit, the root-chain flow calls <strong>RootChainManager.depositFor</strong>, which passes the token and deposit data to a token predicate. That predicate handles the token movement and emits a deposit event. The Polygon PoS process then sends deposit data through state sync for the child chain to process. The log is evidence about the Ethereum step, not a receipt for the later Polygon step.</p>
+
+<h2>Which log confirms an Ethereum bridge deposit?</h2>
+
+<p>For a Polygon PoS ERC-20 deposit, look for the relevant predicate’s <code>LockedERC20</code> event in the Ethereum transaction receipt. A standard ERC-20 predicate can emit that event with the depositor, destination receiver, root token and amount. The exact event depends on the predicate and deployed contract, so identify the bridge path and check its ABI rather than assuming every token uses the same event.</p>
+
+<p>Ethereum’s <code>eth_getTransactionReceipt</code> method returns the transaction’s execution status and its logs. Each log has an emitting contract address, topics and data. For a non-anonymous event, topic zero contains the event signature hash; indexed arguments appear in later topics, while non-indexed arguments are ABI-encoded in data. Decode those fields with the ABI for the emitting contract. A block explorer’s event display can help, but it is a decoded view of these receipt fields.</p>
+
+<p>For wider context on what happens after the source transaction, this <a href="https://barbaragwtl889201.activablog.com/42151758/polygon-bridge-withdrawals-2-exit-models-compared" rel="noopener">comparison of Polygon Bridge withdrawal paths</a> covers the exit side of the flow. Deposit and withdrawal logs serve different steps: an Ethereum deposit event does not prove that a later Polygon withdrawal has completed.</p>
+
+<h2>How do you check the receipt before changing networks?</h2>
+
+<p>Check the receipt’s status, then match the log to the expected contract and transaction details. A receipt status of success means the EVM transaction completed without reverting. It does not establish that the intended bridge contract was called, that the expected asset was deposited, or that a destination-chain action has finished.</p>
+
+<ul>
+<li><strong>Confirm the source transaction.</strong> Match the transaction hash and Ethereum network to the deposit you initiated. A pending transaction has no receipt yet.</li>
+<li><strong>Check the receipt status.</strong> If execution failed, the receipt status is zero and the transaction’s state changes and logs are reverted. A successful status is necessary, but not sufficient.</li>
+<li><strong>Identify the emitter.</strong> Verify the log address against the relevant deployed predicate or bridge contract for the route. A familiar event name from an unverified address is not evidence of a canonical deposit.</li>
+<li><strong>Decode and compare.</strong> Check the event signature and the decoded depositor, receiver, root token and amount against the intended transfer. Compare token addresses, not just symbols.</li>
+</ul>
+
+<p>Do not mistake an ERC-20 <code>Approval</code> or <code>Transfer</code> log for the bridge deposit event. An approval authorizes a spender to move tokens; it does not itself move them into the bridge. A token transfer can be one part of the deposit transaction, but the bridge-specific predicate event identifies the deposit call’s arguments. Some deposit routes or token types use different predicate logic, so an expected ERC-20 event may not apply.</p>
+
+<h2>Does a successful Ethereum log mean Polygon has credited the funds?</h2>
+
+<p>No. On the Polygon PoS ERC-20 path, the root-chain deposit flow calls <code>RootChainManager.depositFor</code>. The manager invokes the mapped predicate’s <code>lockTokens</code> function, then sends encoded deposit data through <code>StateSender.syncState</code>. On the child chain, <code>ChildChainManager.onStateReceive</code> handles the state-sync message and calls the mapped child token’s deposit function. These are distinct execution steps on different chains.</p>
+
+<p>The Ethereum receipt can confirm the source-side event and its arguments. To verify the result, inspect Polygon for the corresponding destination-side processing and the balance of the event’s receiver. A delay between the source receipt and destination credit does not by itself mean the Ethereum transaction failed; the steps have separate execution and confirmation paths. If the destination account differs from the connected wallet, check the event’s receiver before deciding which address should show the balance.</p>
+
+<p>Switching the wallet’s selected network changes which chain the interface queries and where new transactions would be sent. It does not move funds or complete bridge processing. Preserve the Ethereum transaction hash, verify the bridge log against the intended route, then check the receiver on Polygon. That sequence separates source execution from destination delivery, which is the distinction the receipt alone cannot make.</p></div>
+  <aside class="sf6772fe">
+    <h2 class="s1fbb41f">Related</h2>
+    <ul class="sdb65053">
+<li><a href="/ethereum-foundation-puts-zkapi-payment-system-on-mainnet/">Ethereum Foundation puts zkAPI payment system on mainnet</a></li><li><a href="/why-an-imbalanced-lp-deposit-moves-with-the-market/">Why an imbalanced LP deposit moves with the market</a></li><li><a href="/a-token-blacklist-can-stop-a-bridge-redemption-at-either-end/">A Token Blacklist Can Stop a Bridge Redemption at Either End</a></li><li><a href="/why-polygon-pos-bridge-withdrawals-take-hours/">Why Polygon PoS Bridge Withdrawals Take Hours</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s31dc7db">
+  <div class="sde009c0">
+    <p class="sf90387e">Finality</p>
+    <nav class="sf679732" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li>      </ul>
+    </nav>
+    <p class="s854312d">Editorially independent. This is not financial advice.</p>
+    <p class="s4bd746c">© 2026 Finality</p>
+  </div>
+</footer>
+</body>
+</html>
