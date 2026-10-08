@@ -144,7 +144,7 @@
 <article class="s2df380e s80bd518">
   <header class="s9285f16">
     <h1 class="s8fadb46">Read the Ethereum Deposit Log Before You Switch Chains</h1>
-<p class="s8b5835b">An Ethereum receipt proves contract execution, not Polygon credit: identify the bridge event, verify its emitter and arguments, then check the destination chain before switching.</p>    <p class="s20d0529 s6761fa5"><span>The Finality Desk</span><time datetime="2026-10-05T03:23:10+00:00">Oct 5, 2026</time><span>4 min read</span><span>#f88bc7</span></p>
+<p class="s8b5835b">An Ethereum receipt proves contract execution, not Polygon credit: identify the bridge event, verify its emitter and arguments, then check the destination chain before switching.</p>    <p class="s20d0529 s6761fa5"><span>The Finality Desk</span><time datetime="2026-10-05T03:23:10+00:00">Oct 5, 2026 · 03:23 UTC</time><span>4 min read</span><span>#f88bc7</span></p>
   </header>
 <figure class="sf48ee97"><img width="1200" height="630" fetchpriority="high" class="se782955" src="/assets/covers/read-the-ethereum-deposit-log-before-you-switch-chains.jpg" alt="Read the Ethereum Deposit Log Before You Switch Chains"></figure>  <div class="s6dbe647"><p>Read the Ethereum transaction receipt and confirm the bridge’s deposit event before switching networks; a successful receipt alone does not prove that Polygon credited the destination account. For a Polygon PoS ERC-20 deposit, the root-chain flow calls <strong>RootChainManager.depositFor</strong>, which passes the token and deposit data to a token predicate. That predicate handles the token movement and emits a deposit event. The Polygon PoS process then sends deposit data through state sync for the child chain to process. The log is evidence about the Ethereum step, not a receipt for the later Polygon step.</p>
 
@@ -179,7 +179,7 @@
   <aside class="sf6772fe">
     <h2 class="s1fbb41f">Related</h2>
     <ul class="sdb65053">
-<li><a href="/solana-dvp-puts-institutional-trades-into-one-atomic-settlement/">Solana DvP puts institutional trades into one atomic settlement</a></li><li><a href="/fairshake-names-32-house-candidates-for-midterm-spending/">Fairshake names 32 House candidates for midterm spending</a></li><li><a href="/cowswap-explained-choosing-a-token-swap/">cowswap explained: choosing a token swap</a></li><li><a href="/fairshake-targets-32-house-races-as-crypto-bill-stalls/">Fairshake targets 32 House races as crypto bill stalls</a></li>    </ul>
+<li><a href="/fairshake-names-32-house-incumbents-for-midterm-spending/">Fairshake Names 32 House Incumbents for Midterm Spending</a></li><li><a href="/solana-dvp-puts-institutional-trades-into-one-atomic-settlement/">Solana DvP puts institutional trades into one atomic settlement</a></li><li><a href="/fairshake-names-32-house-candidates-for-midterm-spending/">Fairshake names 32 House candidates for midterm spending</a></li><li><a href="/cowswap-explained-choosing-a-token-swap/">cowswap explained: choosing a token swap</a></li>    </ul>
   </aside>
 </article>
 </main>
