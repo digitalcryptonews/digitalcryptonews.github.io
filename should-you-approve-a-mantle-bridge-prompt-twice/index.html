@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mantle Bridge Approval: Should You Approve Twice? | Finality</title>
+<meta name="description" content="A repeated Mantle bridge approval signs an ERC-20 allowance change, not a second transfer; check the spender, amount and pending transaction before signing.">
+<link rel="canonical" href="https://digitalcryptonews.github.io/should-you-approve-a-mantle-bridge-prompt-twice/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#0a0b13">
+<meta name="author" content="The Finality Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Finality">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Should You Approve a Mantle Bridge Prompt Twice?">
+<meta property="og:description" content="A repeated Mantle bridge approval signs an ERC-20 allowance change, not a second transfer; check the spender, amount and pending transaction before signing.">
+<meta property="og:url" content="https://digitalcryptonews.github.io/should-you-approve-a-mantle-bridge-prompt-twice/">
+<meta property="og:image" content="https://digitalcryptonews.github.io/assets/covers/should-you-approve-a-mantle-bridge-prompt-twice-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Should You Approve a Mantle Bridge Prompt Twice?"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Should You Approve a Mantle Bridge Prompt Twice?">
+<meta name="twitter:description" content="A repeated Mantle bridge approval signs an ERC-20 allowance change, not a second transfer; check the spender, amount and pending transaction before signing.">
+<meta property="article:published_time" content="2026-10-16T13:17:22+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/sf0c4226ca7.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Finality" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://digitalcryptonews.github.io/#website",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Finality reports crypto news: protocol upgrades, network incidents, exchange and stablecoin developments, regulation and the projects shaping blockchain."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://digitalcryptonews.github.io/should-you-approve-a-mantle-bridge-prompt-twice/#webpage",
+      "url": "https://digitalcryptonews.github.io/should-you-approve-a-mantle-bridge-prompt-twice/",
+      "name": "Mantle Bridge Approval: Should You Approve Twice? | Finality",
+      "isPartOf": {
+        "@id": "https://digitalcryptonews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://digitalcryptonews.github.io/should-you-approve-a-mantle-bridge-prompt-twice/#article",
+      "headline": "Should You Approve a Mantle Bridge Prompt Twice?",
+      "isAccessibleForFree": true,
+      "description": "A repeated Mantle bridge approval signs an ERC-20 allowance change, not a second transfer; check the spender, amount and pending transaction before signing.",
+      "datePublished": "2026-10-16T13:17:22+00:00",
+      "dateModified": "2026-10-16T13:17:22+00:00",
+      "url": "https://digitalcryptonews.github.io/should-you-approve-a-mantle-bridge-prompt-twice/",
+      "mainEntityOfPage": {
+        "@id": "https://digitalcryptonews.github.io/should-you-approve-a-mantle-bridge-prompt-twice/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "wordCount": 751,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/should-you-approve-a-mantle-bridge-prompt-twice-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/should-you-approve-a-mantle-bridge-prompt-twice-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/should-you-approve-a-mantle-bridge-prompt-twice-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://digitalcryptonews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Should You Approve a Mantle Bridge Prompt Twice?",
+          "item": "https://digitalcryptonews.github.io/should-you-approve-a-mantle-bridge-prompt-twice/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://digitalcryptonews.github.io/#org",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://digitalcryptonews.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5310415" href="#main">Skip to content</a>
+<header class="s33420e7">
+  <div class="s6a0e32e">
+    <a class="s888ca35" href="/">Finality</a>
+    <p class="s9c11555">Crypto protocol and market news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s2df380e s80bd518">
+  <header class="s9285f16">
+    <h1 class="s8fadb46">Should You Approve a Mantle Bridge Prompt Twice?</h1>
+<p class="s8b5835b">A repeated Mantle bridge approval signs an ERC-20 allowance change, not a second transfer; check the spender, amount and pending transaction before signing.</p>    <p class="s20d0529 s6761fa5"><span>The Finality Desk</span><time datetime="2026-10-16T13:17:22+00:00">Oct 16, 2026 · 13:17 UTC</time><span>4 min read</span><span>#b02697</span></p>
+  </header>
+<figure class="sf48ee97"><img width="1200" height="630" fetchpriority="high" class="se782955" src="/assets/covers/should-you-approve-a-mantle-bridge-prompt-twice.jpg" alt="Should You Approve a Mantle Bridge Prompt Twice?"></figure>  <div class="s6dbe647"><p>Approve a Mantle bridge prompt twice only when the second transaction is a verified allowance change the deposit still needs. An ERC-20 approval lets a specified spender call <code>transferFrom</code> up to an allowance; it does not move tokens between networks. The deposit is a separate transaction. If your wallet shows two approval prompts, inspect both before signing, because each confirmed approval can change the token allowance and cost gas.</p>
+
+<h2>What does a Mantle bridge approval authorize?</h2>
+<p>An ERC-20 approval sets how much of a token a named spender may take from your address. For a deposit from Ethereum to Mantle, the source token contract records an allowance for the bridge contract on Ethereum. The bridge uses that allowance when the deposit transaction calls its token-transfer path. The approval does not authorize every contract, and it does not send tokens by itself.</p>
+<p>The approval and deposit are separate calls, often represented in a wallet flow as separate transactions. Mantle’s SDK names its ERC-20 approval helper <code>approveERC20</code>; the deposit follows through a separate deposit call. A <a href="https://telegra.ph/Mantle-Bridge-Swap-Before-or-After-to-Save-Fees-10-14" rel="noopener">mantle bridge</a> fee comparison covers the broader choice of when to swap, while this prompt-level distinction is narrower. Native ETH deposits do not need an ERC-20 allowance, because ETH has no token contract with an <code>approve</code> function.</p>
+
+<h2>Why might the wallet ask for approval twice?</h2>
+<p>A second prompt can be legitimate, but its transaction data should explain why. The bridge may need a new allowance because the existing one is zero or too small for the selected amount. A token may also require the allowance to be reset to zero before setting a new nonzero value. In that case, the wallet can show an approval to zero and then an approval for the intended amount. Each is an allowance update, not a bridge transfer.</p>
+<p>Other causes are less informative: the interface may have retried a request, the first transaction may still be pending, or the wallet may be showing an approval from a different route or network. A repeated prompt is not proof that the first transaction failed. Check the pending transaction in the wallet or the source-chain explorer before submitting another one. The key is the transaction’s target and decoded method, not the prompt’s wording.</p>
+
+<h2>How can you tell whether the second prompt is safe?</h2>
+<p>Compare the token, network, spender and allowance value in the wallet’s transaction details. For an Ethereum-to-Mantle ERC-20 deposit, the approval should concern the source token on Ethereum and the bridge spender used by the deposit route. A prompt on Mantle, or one naming an unrelated spender, does not match that flow. Do not rely on a familiar token symbol: contracts can share symbols, while only the contract address identifies the asset.</p>
+<ul>
+<li>Confirm the wallet is on the intended source network and the token contract matches the asset you selected.</li>
+<li>Check that the spender matches the bridge contract for the chosen route.</li>
+<li>Read the allowance amount. A limited allowance should cover the intended deposit; an unlimited allowance can authorize later transfers up to the token’s available balance.</li>
+<li>Look for an earlier approval still pending or already confirmed before signing another one.</li>
+</ul>
+<p>For a standard ERC-20, <code>approve</code> sets the allowance value; a later approval generally replaces that value rather than adding to it. That means a second approval for a higher amount can leave the spender with a larger standing allowance. A zero-value approval removes the allowance, but it is itself an on-chain transaction and does not reverse a deposit already submitted.</p>
+
+<h2>Should you approve again if the deposit is pending?</h2>
+<p>No: a pending deposit does not, by itself, require another approval. The bridge deposit transaction and the token approval have different transaction hashes and effects. If the approval is confirmed but the deposit has not been sent, return to the bridge interface and check its displayed allowance. If the deposit is pending, monitor that transaction rather than repeating the approval or deposit.</p>
+<p>If you already approved twice, check the token’s allowance for the bridge spender. The deposit may still execute only once, but a larger or renewed allowance can remain after it does. When you no longer need that spender’s access, you can submit an approval setting the allowance to zero, after verifying the spender and allowing for the network gas cost.</p>
+<p>The practical rule is simple: sign the approval the deposit requires, then sign the deposit itself. Treat any additional approval as a fresh authorization. Proceed only when its network, token, spender and amount match what you intend to authorize.</p></div>
+  <aside class="sf6772fe">
+    <h2 class="s1fbb41f">Related</h2>
+    <ul class="sdb65053">
+<li><a href="/hardware-wallets-can-sign-mantle-bridge-transactions/">Hardware Wallets Can Sign Mantle Bridge Transactions</a></li><li><a href="/recurring-treasury-transfers-need-a-recovery-path/">Recurring Treasury Transfers Need a Recovery Path</a></li><li><a href="/why-cross-chain-route-types-change-your-minimum/">Why Cross-Chain Route Types Change Your Minimum</a></li><li><a href="/how-to-make-cross-chain-payroll-transfers-on-time/">How to Make Cross-Chain Payroll Transfers on Time</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s31dc7db">
+  <div class="sde009c0">
+    <p class="sf90387e">Finality</p>
+    <nav class="sf679732" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s854312d">Reporting and analysis — not a recommendation to buy or sell.</p>
+    <p class="s4bd746c">© 2026 Finality</p>
+  </div>
+</footer>
+</body>
+</html>
