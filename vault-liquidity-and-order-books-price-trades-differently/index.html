@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vault Liquidity vs Order Books: Swap Execution | Finality</title>
+<meta name="description" content="Pool swaps price against shared inventory, while order books match bids and asks; the better route depends on depth, execution control, fees and timing.">
+<link rel="canonical" href="https://digitalcryptonews.github.io/vault-liquidity-and-order-books-price-trades-differently/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#0a0b13">
+<meta name="author" content="The Finality Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Finality">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Vault Liquidity and Order Books Price Trades Differently">
+<meta property="og:description" content="Pool swaps price against shared inventory, while order books match bids and asks; the better route depends on depth, execution control, fees and timing.">
+<meta property="og:url" content="https://digitalcryptonews.github.io/vault-liquidity-and-order-books-price-trades-differently/">
+<meta property="og:image" content="https://digitalcryptonews.github.io/assets/covers/vault-liquidity-and-order-books-price-trades-differently-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vault Liquidity and Order Books Price Trades Differently"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vault Liquidity and Order Books Price Trades Differently">
+<meta name="twitter:description" content="Pool swaps price against shared inventory, while order books match bids and asks; the better route depends on depth, execution control, fees and timing.">
+<meta property="article:published_time" content="2026-10-17T06:43:33+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/sf0c4226ca7.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Finality" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://digitalcryptonews.github.io/#website",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Finality reports crypto news: protocol upgrades, network incidents, exchange and stablecoin developments, regulation and the projects shaping blockchain."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://digitalcryptonews.github.io/vault-liquidity-and-order-books-price-trades-differently/#webpage",
+      "url": "https://digitalcryptonews.github.io/vault-liquidity-and-order-books-price-trades-differently/",
+      "name": "Vault Liquidity vs Order Books: Swap Execution | Finality",
+      "isPartOf": {
+        "@id": "https://digitalcryptonews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://digitalcryptonews.github.io/vault-liquidity-and-order-books-price-trades-differently/#article",
+      "headline": "Vault Liquidity and Order Books Price Trades Differently",
+      "isAccessibleForFree": true,
+      "description": "Pool swaps price against shared inventory, while order books match bids and asks; the better route depends on depth, execution control, fees and timing.",
+      "datePublished": "2026-10-17T06:43:33+00:00",
+      "dateModified": "2026-10-17T06:43:33+00:00",
+      "url": "https://digitalcryptonews.github.io/vault-liquidity-and-order-books-price-trades-differently/",
+      "mainEntityOfPage": {
+        "@id": "https://digitalcryptonews.github.io/vault-liquidity-and-order-books-price-trades-differently/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "wordCount": 1042,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/vault-liquidity-and-order-books-price-trades-differently-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/vault-liquidity-and-order-books-price-trades-differently-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/vault-liquidity-and-order-books-price-trades-differently-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://digitalcryptonews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Vault Liquidity and Order Books Price Trades Differently",
+          "item": "https://digitalcryptonews.github.io/vault-liquidity-and-order-books-price-trades-differently/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://digitalcryptonews.github.io/#org",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://digitalcryptonews.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5310415" href="#main">Skip to content</a>
+<header class="s33420e7">
+  <div class="s6a0e32e">
+    <a class="s888ca35" href="/">Finality</a>
+    <p class="s9c11555">Crypto protocol and market news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s2df380e s80bd518">
+  <header class="s9285f16">
+    <h1 class="s8fadb46">Vault Liquidity and Order Books Price Trades Differently</h1>
+<p class="s8b5835b">Pool swaps price against shared inventory, while order books match bids and asks; the better route depends on depth, execution control, fees and timing.</p>    <p class="s20d0529 s6761fa5"><span>The Finality Desk</span><time datetime="2026-10-17T06:43:33+00:00">Oct 17, 2026 · 06:43 UTC</time><span>6 min read</span><span>#830ab1</span></p>
+  </header>
+<figure class="sf48ee97"><img width="1200" height="630" fetchpriority="high" class="se782955" src="/assets/covers/vault-liquidity-and-order-books-price-trades-differently.jpg" alt="Vault Liquidity and Order Books Price Trades Differently"></figure>  <div class="s6dbe647"><p>Vault liquidity and order books fill swaps through different mechanisms: a pool quotes against assets already held in a vault or contract, while an order book matches a buyer with a seller’s resting order. That difference shapes the price you receive, how much control you have over execution and what happens when available liquidity is thin. A displayed quote is only a starting point; compare the expected output after price impact and fees.</p>
+
+<p>In a pool, a swap changes the inventory ratio, so each trade can move the price for the next one. In an order book, marketable orders consume bids or asks, usually starting at the best available price and moving through the book if the order is larger than the quantity posted there. For a closer look at how route choices affect a <a href="https://fabian-little-0hieyzshnvfmguf0_pr2d.justblogged.com/thor-swap-explained-four-swap-routes-their-trade-offs" rel="noopener">thor swap</a>, see the fuller route-by-route explanation.</p>
+
+<h2>How does vault liquidity set a swap price?</h2>
+
+<p>A pool swap calculates output from the pool’s asset balances and pricing rule. In a constant-product pool, the product of the two token balances is kept approximately constant as a trade changes them; the marginal price follows the balance ratio. The larger the input relative to the pool’s depth, the further the trade moves along the curve, reducing the average execution price. This is price impact. Slippage can add another difference if the pool state changes between the quote and execution.</p>
+
+<p>“Vault liquidity” can describe assets held in a protocol’s vaults, but the vault and the pricing mechanism are not the same thing. A vault may secure or custody assets, while a pool’s accounting and swap rules determine the quote. In THORChain, for example, external-chain assets are handled through vaults and swaps use Continuous Liquidity Pools. Supported assets are paired with RUNE, so a swap between two external assets can pass through their respective RUNE pools. Each pool leg affects the final output, and the outbound transfer to the destination chain has its own network cost.</p>
+
+<p>This design makes a quote available from pool inventory without waiting for a specific counterparty to post the other side at a chosen price. The trade-off is that the pool absorbs the order against its curve. Thin depth, a large trade or a volatile market can make the resulting average price diverge from the pool’s starting price. A price limit or minimum-output condition can bound execution where the protocol supports it, but it can also leave a trade partly or entirely unfilled.</p>
+
+<h2>How does an order book fill a swap?</h2>
+
+<p>An order book records limit orders: bids specify how much buyers will pay, and asks specify how much sellers will accept. A market order takes liquidity from those resting orders. The best bid and best ask define the spread, while the quantities at each price level define visible depth. A market order that exceeds the quantity at the best price continues into worse levels, creating execution cost through book impact.</p>
+
+<p>A limit order gives the trader a price boundary, but not a guaranteed fill. It can remain open if the market does not reach its price, and it may fill only partially if available opposite-side interest is insufficient. The book can also change before an order reaches the matching engine. On-chain order books add transaction inclusion and ordering to that uncertainty; the precise risk depends on the chain and venue’s matching design.</p>
+
+<p>Books expose more direct control over price and size. They also depend on makers replenishing quotes. A narrow spread at the top does not establish deep liquidity: check how much is available across the price levels your trade would consume. Pools present a different view. Their pricing curve implies the cost of a trade at each size, but the quoted output still depends on the pool state when execution occurs.</p>
+
+<h2>Which route gives the better execution?</h2>
+
+<p>Neither format wins by category. The comparison is between the total executable cost for your size and the controls you need. For a small trade against a deep pool, the curve may produce a competitive quote and execution can be direct. A deep order book can offer tighter pricing and limit-order control, especially when you do not need an immediate fill. In a thin market, either route can be expensive: the pool may move sharply along its curve, or the book may have a wide spread and little size near the top.</p>
+
+<ul>
+<li>Compare the expected output for your exact trade size, not just the displayed spot price.</li>
+<li>Include pool price impact or book spread and depth, plus network, trading and protocol fees.</li>
+<li>Check whether the route offers a minimum output or price limit, and whether that condition can cause a partial fill, delay or refund.</li>
+<li>For a large trade, compare a single execution with supported split or streamed execution; account for extra time and route-specific costs.</li>
+</ul>
+
+<p>For a pool-based cross-chain swap, the final amount may reflect multiple pool legs as well as inbound and outbound chain fees. Streaming can divide a large swap into smaller executions over time where the protocol supports it. That can reduce the impact of each part, but it exposes later parts to changing pool prices and takes longer to complete. An order book can also be worked over time, though fill certainty depends on incoming counterparties and the venue’s order rules.</p>
+
+<h2>What should you check before swapping?</h2>
+
+<p>Start with the quoted net output and the conditions attached to it. Identify where the trade executes, whether it uses one pool or multiple legs, and which fees are deducted from the output. Then check the minimum-output setting, quote expiry or any streaming interval. A route can look cheaper before fees but deliver less after outbound costs; another can quote more but fail its price limit before completion.</p>
+
+<p>For most readers making a routine swap, choose the route with the strongest net quote at the intended size and a clear execution bound. Use an order book when price control matters and you can accept waiting for a fill. Use pool liquidity when its depth supports your trade and the convenience of immediate algorithmic pricing outweighs the curve impact. The useful comparison is not “pool or book” in the abstract. It is how much executable liquidity is available at the price you are willing to accept.</p></div>
+  <aside class="sf6772fe">
+    <h2 class="s1fbb41f">Related</h2>
+    <ul class="sdb65053">
+<li><a href="/which-fees-remain-after-you-cancel-a-bridge-route/">Which Fees Remain After You Cancel a Bridge Route?</a></li><li><a href="/a-stablecoin-funding-cutoff-is-a-payment-deadline-not-a-network-rule/">A Stablecoin Funding Cutoff Is a Payment Deadline, Not a Network Rule</a></li><li><a href="/swap-into-the-fee-token-a-cross-chain-message-requires/">Swap Into the Fee Token a Cross-Chain Message Requires</a></li><li><a href="/cross-chain-swap-stuck-check-its-state-before-retrying/">Cross-Chain Swap Stuck? Check Its State Before Retrying</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s31dc7db">
+  <div class="sde009c0">
+    <p class="sf90387e">Finality</p>
+    <nav class="sf679732" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s854312d">Reporting and analysis — not a recommendation to buy or sell.</p>
+    <p class="s4bd746c">© 2026 Finality</p>
+  </div>
+</footer>
+</body>
+</html>
