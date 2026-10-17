@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-Chain Swap Stuck: Check Before Retrying | Finality</title>
+<meta name="description" content="A pending swap is a state problem, not a signal to submit again: verify the source transaction, route status and destination claim or refund path first.">
+<link rel="canonical" href="https://digitalcryptonews.github.io/cross-chain-swap-stuck-check-its-state-before-retrying/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#0a0b13">
+<meta name="author" content="The Finality Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Finality">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Cross-Chain Swap Stuck? Check Its State Before Retrying">
+<meta property="og:description" content="A pending swap is a state problem, not a signal to submit again: verify the source transaction, route status and destination claim or refund path first.">
+<meta property="og:url" content="https://digitalcryptonews.github.io/cross-chain-swap-stuck-check-its-state-before-retrying/">
+<meta property="og:image" content="https://digitalcryptonews.github.io/assets/covers/cross-chain-swap-stuck-check-its-state-before-retrying-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cross-Chain Swap Stuck? Check Its State Before Retrying"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cross-Chain Swap Stuck? Check Its State Before Retrying">
+<meta name="twitter:description" content="A pending swap is a state problem, not a signal to submit again: verify the source transaction, route status and destination claim or refund path first.">
+<meta property="article:published_time" content="2026-10-17T00:56:07+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/sf0c4226ca7.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Finality" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://digitalcryptonews.github.io/#website",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Finality reports crypto news: protocol upgrades, network incidents, exchange and stablecoin developments, regulation and the projects shaping blockchain."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://digitalcryptonews.github.io/cross-chain-swap-stuck-check-its-state-before-retrying/#webpage",
+      "url": "https://digitalcryptonews.github.io/cross-chain-swap-stuck-check-its-state-before-retrying/",
+      "name": "Cross-Chain Swap Stuck: Check Before Retrying | Finality",
+      "isPartOf": {
+        "@id": "https://digitalcryptonews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://digitalcryptonews.github.io/cross-chain-swap-stuck-check-its-state-before-retrying/#article",
+      "headline": "Cross-Chain Swap Stuck? Check Its State Before Retrying",
+      "isAccessibleForFree": true,
+      "description": "A pending swap is a state problem, not a signal to submit again: verify the source transaction, route status and destination claim or refund path first.",
+      "datePublished": "2026-10-17T00:56:07+00:00",
+      "dateModified": "2026-10-17T00:56:07+00:00",
+      "url": "https://digitalcryptonews.github.io/cross-chain-swap-stuck-check-its-state-before-retrying/",
+      "mainEntityOfPage": {
+        "@id": "https://digitalcryptonews.github.io/cross-chain-swap-stuck-check-its-state-before-retrying/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "wordCount": 824,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/cross-chain-swap-stuck-check-its-state-before-retrying-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/cross-chain-swap-stuck-check-its-state-before-retrying-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/cross-chain-swap-stuck-check-its-state-before-retrying-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://digitalcryptonews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cross-Chain Swap Stuck? Check Its State Before Retrying",
+          "item": "https://digitalcryptonews.github.io/cross-chain-swap-stuck-check-its-state-before-retrying/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://digitalcryptonews.github.io/#org",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://digitalcryptonews.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5310415" href="#main">Skip to content</a>
+<header class="s33420e7">
+  <div class="s6a0e32e">
+    <a class="s888ca35" href="/">Finality</a>
+    <p class="s9c11555">Crypto protocol and market news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s2df380e s80bd518">
+  <header class="s9285f16">
+    <h1 class="s8fadb46">Cross-Chain Swap Stuck? Check Its State Before Retrying</h1>
+<p class="s8b5835b">A pending swap is a state problem, not a signal to submit again: verify the source transaction, route status and destination claim or refund path first.</p>    <p class="s20d0529 s6761fa5"><span>The Finality Desk</span><time datetime="2026-10-17T00:56:07+00:00">Oct 17, 2026 · 00:56 UTC</time><span>5 min read</span><span>#a45c6f</span></p>
+  </header>
+<figure class="sf48ee97"><img width="1200" height="630" fetchpriority="high" class="se782955" src="/assets/covers/cross-chain-swap-stuck-check-its-state-before-retrying.jpg" alt="Cross-Chain Swap Stuck? Check Its State Before Retrying"></figure>  <div class="s6dbe647"><p>Before retrying a stuck cross-chain swap, establish whether the source transaction failed, the route is still processing, or the destination action needs recovery. A swap that has left the source wallet can remain incomplete while a bridge, solver or relayer handles the next step. Submitting again may create a second request; it does not resolve the first one.</p>
+
+<p>Start with the source-chain transaction hash, not the wallet’s activity label. On an EVM chain, inspect the transaction receipt and decoded call to identify the contract function that ran. A successful receipt means the call executed; it does not prove that the destination transfer or swap completed. Check the emitted logs and the protocol’s status page for the route or message identifier tied to that transaction. For route-choice context, see <a href="https://chainbrief.org/quickswap-routes-separate-liquidity-choice-from-trade-timing/" rel="noopener">which QuickSwap route fits each trade</a>; route selection and execution timing are separate questions.</p>
+
+<h2>Did the source transaction actually fail?</h2>
+
+<p>A failed source receipt means the contract call reverted or otherwise failed under that chain’s execution rules, so the intended bridge request was not successfully created. The wallet may still have paid a network fee. Check the receipt’s status and failure details before submitting again. If the transaction is pending rather than confirmed, inspect its nonce and current network fee conditions; a replacement transaction with the same nonce can supersede it on chains that use that model.</p>
+
+<p>Do not treat a wallet timeout as a failed transaction. The wallet may have stopped waiting while the network continued processing. Search the hash in a block explorer, then check whether the transaction is pending, included, dropped from the node’s mempool, or confirmed. These states have different consequences. A pending transaction may still execute. A dropped transaction may be resubmitted, but first verify that it was not included elsewhere or replaced.</p>
+
+<p>When the receipt succeeds, inspect the call target, function arguments and logs. Confirm the source token, amount, destination chain and recipient. A successful call to a router can encode a swap and a bridge request in one transaction, but the exact function and event names depend on the protocol. Use the protocol’s own decoder or explorer data; do not infer completion from a token leaving the wallet alone.</p>
+
+<h2>Why can the destination leg still be pending?</h2>
+
+<p>A confirmed source transaction can leave a route waiting for a separate destination-side action. Depending on the protocol, that action may be performed by a relayer, solver, liquidity provider or a user submitting a claim. The source receipt confirms only what happened on the source chain. Look up the route’s message or order status and, if available, the destination transaction hash.</p>
+
+<p>If a destination hash exists, inspect its receipt and logs on the destination chain. A successful destination receipt can confirm delivery even when the original interface has not refreshed. Verify the recipient address and token contract, since the received asset may use a different token representation from the source asset. If the destination transaction failed, check the protocol’s documented recovery path. Some designs allow a claim to be attempted again; others require a specific recovery function or support process. The route’s rules determine which applies.</p>
+
+<p>If there is no destination transaction yet, distinguish a normal wait from a stalled route using the protocol’s status data. A solver-based route may be waiting for fulfillment; a bridge message may be waiting for verification or relay. These are different mechanisms, and the user’s next action differs. A “pending” label alone does not identify the mechanism or prove that the route is stuck.</p>
+
+<h2>What should you verify before retrying?</h2>
+
+<p>Compare the wallet, explorer and route tracker before taking another action. Use the route identifier associated with the confirmed source transaction, not a fresh quote or a second wallet prompt. Check these fields:</p>
+
+<ul>
+<li><strong>Source status:</strong> Confirm whether the transaction is pending, failed or included, and whether the intended contract call succeeded.</li>
+<li><strong>Route status:</strong> Match the source hash to the correct message, order or transfer identifier in the protocol tracker.</li>
+<li><strong>Destination evidence:</strong> Check for a destination transaction, claim requirement, delivered token or documented recovery action.</li>
+<li><strong>Recipient and amount:</strong> Verify the destination address, token and amount against the original request before claiming or retrying.</li>
+</ul>
+
+<p>Retry only when the protocol’s state confirms that no live request remains and its instructions say a new submission is valid. If the source transaction is pending, resolve or wait on that transaction first. If it succeeded and the route is processing, do not submit a duplicate. If the destination action failed or requires a claim, follow that route’s recovery mechanism. A fresh swap is appropriate only after confirming that the original request failed or was fully refunded.</p>
+
+<p>Keep the source hash, route identifier and any destination hash together when investigating. They show where the request stopped and which actor or contract path owns the next step. That is the useful distinction: a cross-chain swap is not one atomic transaction across both chains, so retry decisions depend on the state of each leg.</p></div>
+  <aside class="sf6772fe">
+    <h2 class="s1fbb41f">Related</h2>
+    <ul class="sdb65053">
+<li><a href="/when-cross-chain-swap-auctions-make-sense/">When Cross-Chain Swap Auctions Make Sense</a></li><li><a href="/bridge-funds-to-the-nfts-chain-before-you-buy/">Bridge Funds to the NFT’s Chain Before You Buy</a></li><li><a href="/eba-makes-usdc-the-eus-first-significant-e-money-token/">EBA makes USDC the EU’s first significant e-money token</a></li><li><a href="/why-token-approval-and-swap-gas-estimates-change/">Why Token Approval and Swap Gas Estimates Change</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s31dc7db">
+  <div class="sde009c0">
+    <p class="sf90387e">Finality</p>
+    <nav class="sf679732" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s854312d">Reporting and analysis — not a recommendation to buy or sell.</p>
+    <p class="s4bd746c">© 2026 Finality</p>
+  </div>
+</footer>
+</body>
+</html>
