@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Permits for One-Step Bridge Deposits | Finality</title>
+<meta name="description" content="An ERC-2612 permit lets a supported bridge set token allowance from a signature and pull funds in one transaction, but the bridge must handle the permit correctly.">
+<link rel="canonical" href="https://digitalcryptonews.github.io/how-erc-2612-permits-can-bundle-a-bridge-deposit/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#0a0b13">
+<meta name="author" content="The Finality Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Finality">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How ERC-2612 Permits Can Bundle a Bridge Deposit">
+<meta property="og:description" content="An ERC-2612 permit lets a supported bridge set token allowance from a signature and pull funds in one transaction, but the bridge must handle the permit correctly.">
+<meta property="og:url" content="https://digitalcryptonews.github.io/how-erc-2612-permits-can-bundle-a-bridge-deposit/">
+<meta property="og:image" content="https://digitalcryptonews.github.io/assets/covers/how-erc-2612-permits-can-bundle-a-bridge-deposit-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How ERC-2612 Permits Can Bundle a Bridge Deposit"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How ERC-2612 Permits Can Bundle a Bridge Deposit">
+<meta name="twitter:description" content="An ERC-2612 permit lets a supported bridge set token allowance from a signature and pull funds in one transaction, but the bridge must handle the permit correctly.">
+<meta property="article:published_time" content="2026-10-20T14:07:43+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/sf0c4226ca7.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Finality" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://digitalcryptonews.github.io/#website",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Finality reports crypto news: protocol upgrades, network incidents, exchange and stablecoin developments, regulation and the projects shaping blockchain."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://digitalcryptonews.github.io/how-erc-2612-permits-can-bundle-a-bridge-deposit/#webpage",
+      "url": "https://digitalcryptonews.github.io/how-erc-2612-permits-can-bundle-a-bridge-deposit/",
+      "name": "Token Permits for One-Step Bridge Deposits | Finality",
+      "isPartOf": {
+        "@id": "https://digitalcryptonews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://digitalcryptonews.github.io/how-erc-2612-permits-can-bundle-a-bridge-deposit/#article",
+      "headline": "How ERC-2612 Permits Can Bundle a Bridge Deposit",
+      "isAccessibleForFree": true,
+      "description": "An ERC-2612 permit lets a supported bridge set token allowance from a signature and pull funds in one transaction, but the bridge must handle the permit correctly.",
+      "datePublished": "2026-10-20T14:07:43+00:00",
+      "dateModified": "2026-10-20T14:07:43+00:00",
+      "url": "https://digitalcryptonews.github.io/how-erc-2612-permits-can-bundle-a-bridge-deposit/",
+      "mainEntityOfPage": {
+        "@id": "https://digitalcryptonews.github.io/how-erc-2612-permits-can-bundle-a-bridge-deposit/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "wordCount": 746,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/how-erc-2612-permits-can-bundle-a-bridge-deposit-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/how-erc-2612-permits-can-bundle-a-bridge-deposit-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/how-erc-2612-permits-can-bundle-a-bridge-deposit-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://digitalcryptonews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How ERC-2612 Permits Can Bundle a Bridge Deposit",
+          "item": "https://digitalcryptonews.github.io/how-erc-2612-permits-can-bundle-a-bridge-deposit/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://digitalcryptonews.github.io/#org",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://digitalcryptonews.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5310415" href="#main">Skip to content</a>
+<header class="s33420e7">
+  <div class="s6a0e32e">
+    <a class="s888ca35" href="/">Finality</a>
+    <p class="s9c11555">Crypto protocol and market news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s2df380e s80bd518">
+  <header class="s9285f16">
+    <h1 class="s8fadb46">How ERC-2612 Permits Can Bundle a Bridge Deposit</h1>
+<p class="s8b5835b">An ERC-2612 permit lets a supported bridge set token allowance from a signature and pull funds in one transaction, but the bridge must handle the permit correctly.</p>    <p class="s20d0529 s6761fa5"><span>The Finality Desk</span><time datetime="2026-10-20T14:07:43+00:00">Oct 20, 2026 · 14:07 UTC</time><span>4 min read</span><span>#78e14b</span></p>
+  </header>
+<figure class="sf48ee97"><img width="1200" height="630" fetchpriority="high" class="se782955" src="/assets/covers/how-erc-2612-permits-can-bundle-a-bridge-deposit.jpg" alt="How ERC-2612 Permits Can Bundle a Bridge Deposit"></figure>  <div class="s6dbe647"><p>An ERC-2612 permit lets a bridge set a token allowance from a signed message and consume it during the same deposit transaction. The wallet signs the allowance off-chain, then submits a transaction that calls the token’s <code>permit</code> function and the bridge’s deposit function. This removes the separate on-chain <code>approve</code> transaction; it does not remove the deposit transaction or its gas cost.</p>
+
+<h2>How does an ERC-2612 permit work?</h2>
+
+<p>The token contract adds a <code>permit(owner, spender, value, deadline, v, r, s)</code> function. The owner signs typed data that binds the allowance to a spender, an amount, a deadline and the owner’s current nonce. The token verifies the signature, sets <code>allowance[owner][spender]</code> to <code>value</code>, increments the owner’s nonce and emits an <code>Approval</code> event. A stale deadline, wrong nonce or invalid signature makes the call revert.</p>
+
+<p>The signature authorizes an allowance update; it does not itself transfer tokens or call the bridge. To deposit in one transaction, the bridge or its router must accept the permit data, call <code>permit</code> on the token, then call <code>transferFrom</code> to take the deposit amount. If either step fails, the transaction reverts as a whole, so the allowance update does not persist without the deposit.</p>
+
+<p>The destination of the allowance matters. The spender in the signed message must be the contract that will call <code>transferFrom</code>, which may be a router rather than the bridge contract that ultimately handles the deposit. For route choice and the steps around it, see this <a href="https://dune.com/polly_defi/first-time-mayan-bridge-how-to-choose-a-route" rel="noopener">Mayan Bridge route-selection walkthrough</a>. That wider choice is separate from the permit: a route that cannot consume the token’s permit still needs a prior approval.</p>
+
+<h2>What must the wallet and bridge support?</h2>
+
+<p>Both ends of the flow need compatible support. The token must implement ERC-2612, and the bridge’s deposit path must accept and process its permit. A conventional ERC-20 <code>approve</code> allowance does not imply that the token supports <code>permit</code>. Some tokens use a different signature-approval interface, so a wallet’s generic “sign” option cannot make an incompatible token or bridge support ERC-2612.</p>
+
+<p>The message is encoded as typed structured data under EIP-712. Its domain separator ties the signature to the token contract’s domain, typically including the chain ID and verifying contract. Wallets should show the token, spender, allowance value and deadline clearly. A signature for one token contract or spender is not a general instruction to deposit through any bridge.</p>
+
+<ul>
+<li><strong>Token:</strong> confirm the token exposes the expected <code>permit</code> interface on the source chain.</li>
+<li><strong>Spender:</strong> compare the signed spender address with the contract that will pull the tokens.</li>
+<li><strong>Amount:</strong> check the permitted value against the intended deposit; ERC-2612 sets the allowance to that value.</li>
+<li><strong>Deadline:</strong> use a deadline that leaves enough time to submit the transaction without leaving the signature valid longer than needed.</li>
+</ul>
+
+<h2>What can make a one-step deposit fail?</h2>
+
+<p>A permit can expire before inclusion, use a nonce already consumed by another permit, or target a spender different from the bridge’s transfer path. The bridge call can also fail for its own reasons, such as a rejected token or invalid deposit parameters. In each case, the wallet sees a reverted transaction rather than a completed deposit.</p>
+
+<p>There is a race edge case because ERC-2612 permits can be submitted by anyone who has the signature. If another party submits the permit first, the token consumes its nonce and installs the allowance. A bridge that always calls <code>permit</code> and reverts when that call fails may then reject the user’s deposit even though the allowance is already present. Integrations can handle this by attempting the permit and proceeding only if the required allowance is available. That behavior is an integration choice, not a guarantee of the ERC-2612 interface.</p>
+
+<h2>When is a permit the better approval path?</h2>
+
+<p>For a supported token and bridge, a permit is useful when the user wants to approve and deposit in one wallet transaction. It saves the separate approval transaction and avoids leaving an allowance from an earlier step if the user abandons the deposit. The bridge still receives an ordinary ERC-20 allowance, and after a successful deposit any unused portion may remain until spent or changed.</p>
+
+<p>Check the actual spender and value in the signature request, then confirm that the wallet is submitting the intended deposit call. If the token or bridge lacks ERC-2612 support, use the bridge’s standard approval flow and verify the spender there. The practical rule is simple: one-step deposit works only when the token’s permit and the bridge’s transfer path are wired to the same allowance.</p></div>
+  <aside class="sf6772fe">
+    <h2 class="s1fbb41f">Related</h2>
+    <ul class="sdb65053">
+<li><a href="/jpmorgan-brings-jpm-coin-to-ethereum-for-institutions/">JPMorgan Brings JPM Coin to Ethereum for Institutions</a></li><li><a href="/jpmorgan-extends-jpmd-transfers-to-ethereum/">JPMorgan extends JPMD transfers to Ethereum</a></li><li><a href="/ledger-reviews-wallet-sales-after-cryptobilis-linked-theft/">Ledger reviews wallet sales after CryptoBilis-linked theft</a></li><li><a href="/estimate-bridge-fee-tiers-from-net-proceeds/">Estimate Bridge Fee Tiers From Net Proceeds</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s31dc7db">
+  <div class="sde009c0">
+    <p class="sf90387e">Finality</p>
+    <nav class="sf679732" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s854312d">Reporting and analysis — not a recommendation to buy or sell.</p>
+    <p class="s4bd746c">© 2026 Finality</p>
+  </div>
+</footer>
+</body>
+</html>
