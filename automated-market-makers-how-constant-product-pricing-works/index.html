@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How do automated market makers work for beginners: rates</title>
+<meta name="description" content="Learn how automated market makers work for beginners: a pool’s reserve ratio sets the spot rate, while trade size and fees determine the output you receive.">
+<link rel="canonical" href="https://digitalcryptonews.github.io/automated-market-makers-how-constant-product-pricing-works/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#0a0b13">
+<meta name="author" content="The Finality Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Finality">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Automated Market Makers: How Constant-Product Pricing Works">
+<meta property="og:description" content="Learn how automated market makers work for beginners: a pool’s reserve ratio sets the spot rate, while trade size and fees determine the output you receive.">
+<meta property="og:url" content="https://digitalcryptonews.github.io/automated-market-makers-how-constant-product-pricing-works/">
+<meta property="og:image" content="https://digitalcryptonews.github.io/assets/covers/automated-market-makers-how-constant-product-pricing-works-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Automated Market Makers: How Constant-Product Pricing Works"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Automated Market Makers: How Constant-Product Pricing Works">
+<meta name="twitter:description" content="Learn how automated market makers work for beginners: a pool’s reserve ratio sets the spot rate, while trade size and fees determine the output you receive.">
+<meta property="article:published_time" content="2026-11-18T21:35:20+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/sf0c4226ca7.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Finality" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://digitalcryptonews.github.io/#website",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Finality reports crypto news: protocol upgrades, network incidents, exchange and stablecoin developments, regulation and the projects shaping blockchain."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://digitalcryptonews.github.io/automated-market-makers-how-constant-product-pricing-works/#webpage",
+      "url": "https://digitalcryptonews.github.io/automated-market-makers-how-constant-product-pricing-works/",
+      "name": "How do automated market makers work for beginners: rates",
+      "isPartOf": {
+        "@id": "https://digitalcryptonews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://digitalcryptonews.github.io/automated-market-makers-how-constant-product-pricing-works/#article",
+      "headline": "Automated Market Makers: How Constant-Product Pricing Works",
+      "isAccessibleForFree": true,
+      "description": "Learn how automated market makers work for beginners: a pool’s reserve ratio sets the spot rate, while trade size and fees determine the output you receive.",
+      "datePublished": "2026-11-18T21:35:20+00:00",
+      "dateModified": "2026-11-18T21:35:20+00:00",
+      "url": "https://digitalcryptonews.github.io/automated-market-makers-how-constant-product-pricing-works/",
+      "mainEntityOfPage": {
+        "@id": "https://digitalcryptonews.github.io/automated-market-makers-how-constant-product-pricing-works/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "wordCount": 925,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/automated-market-makers-how-constant-product-pricing-works-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/automated-market-makers-how-constant-product-pricing-works-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/automated-market-makers-how-constant-product-pricing-works-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://digitalcryptonews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Automated Market Makers: How Constant-Product Pricing Works",
+          "item": "https://digitalcryptonews.github.io/automated-market-makers-how-constant-product-pricing-works/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://digitalcryptonews.github.io/#org",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://digitalcryptonews.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5310415" href="#main">Skip to content</a>
+<header class="s33420e7">
+  <div class="s6a0e32e">
+    <a class="s888ca35" href="/">Finality</a>
+    <p class="s9c11555">Crypto protocol and market news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s2df380e s80bd518">
+  <header class="s9285f16">
+    <h1 class="s8fadb46">Automated Market Makers: How Constant-Product Pricing Works</h1>
+<p class="s8b5835b">Learn how automated market makers work for beginners: a pool’s reserve ratio sets the spot rate, while trade size and fees determine the output you receive.</p>    <p class="s20d0529 s6761fa5"><span>The Finality Desk</span><time datetime="2026-11-18T21:35:20+00:00">Nov 18, 2026 · 21:35 UTC</time><span>5 min read</span><span>#56e0c8</span></p>
+  </header>
+<figure class="sf48ee97"><img width="1200" height="630" fetchpriority="high" class="se782955" src="/assets/covers/automated-market-makers-how-constant-product-pricing-works.jpg" alt="Automated Market Makers: How Constant-Product Pricing Works"></figure>  <div class="s6dbe647"><p>An automated market maker sets a swap’s price from the balances in its liquidity pool: the reserve ratio gives the spot price, and each trade changes that ratio. A constant-product pool keeps the product of its reserves fixed for pricing, so larger trades move the rate further.</p>
+<h2>The pool’s reserves set the rate</h2>
+<p>A constant-product automated market maker prices a trade by using the incoming token to change the pool’s reserves, then calculating how much of the other token can leave while preserving the product. The trade has three parts:</p>
+<ul>
+<li><strong>In:</strong> the amount of one token sent to the pool.</li>
+<li><strong>Process:</strong> the pool applies its fee and calculates the output under x × y = k.</li>
+<li><strong>Out:</strong> the amount of the other token the pool returns.</li>
+</ul>
+<p>Here, x and y are the reserves of the two tokens, and k is their product. The spot price is the ratio between reserves: for a pool holding x units of A and y units of B, one A is priced at y ÷ x B. That is a reference rate for a tiny trade. The actual amount received depends on how much the trade shifts the reserves.</p>
+<p>This is the counterparty mechanism: there is no order book matching a buyer with a seller. The pool’s tokens and pricing rule determine the available output. SunSwap is a TRON exchange for swapping TRC-20 tokens through liquidity pools. Its pool versions make it a concrete example of <a href="/how-does-sunswap-work-pricing-routes-and-versions/">how SunSwap prices and routes swaps</a>; the article explains how those versions affect the path and pricing of a trade.</p>
+<h2>A larger trade moves the price further</h2>
+<p>To estimate output before fees, use the constant-product relationship. Let x be the pool’s starting reserve of the token you send, y the starting reserve of the token you receive, and q the input amount. Then output = y − (x × y)/(x + q). The quantities for each token must use consistent units. With a fee, replace q with the input amount after the fee is deducted.</p>
+<p>Take a pool with 1,000 A and 1,000 B. Its spot price is 1 B per A. Sending 100 B means x = 1,000 B, y = 1,000 A, and q = 100 B. The calculation gives 1,000 − 1,000,000 ÷ 1,100 = about 90.9 A before fees. The trade adds 100 B and removes about 90.9 A, leaving the product approximately unchanged.</p>
+<p>At the starting spot rate, 100 B appears to be worth 100 A. The pool returns about 9.1 A less, a shortfall of roughly 9% compared with that spot-price estimate. This difference is price impact: it comes from the trade changing the reserve ratio as it executes. It is not a separate fee.</p>
+<p>The reusable calculation assumes a two-token constant-product pool and ignores other effects such as routing through multiple pools. A fee reduces the amount used in the output calculation; the pool retains that fee for liquidity providers. The execution rate is the actual output divided by the input. The spot price is the pool’s reserve ratio before the trade. Mixing them up makes a quote look better than the amount the pool can deliver.</p>
+<p>Trade size matters relative to pool depth. The same input generally causes more price impact in a smaller pool because it is a larger share of the reserves. A small trade against deep reserves stays closer to the spot rate; a large trade against shallow reserves pushes the rate further. Compare both the quoted output and the pool’s reserves when judging a rate.</p>
+<h2>Fees and arbitrage shape the pool price</h2>
+<p>A pool fee is taken from the input amount used for the swap, and the fee stays in the pool for liquidity providers. The fee and price impact affect a trade in different ways: the fee reduces the amount that enters the pricing calculation, while price impact follows from the reserve change. A quote that accounts for only one can misstate the output.</p>
+<p>Arbitrageurs help pull a pool’s price toward prices available in other markets. When the pool’s reserve ratio drifts, a trader can swap against it at a rate that differs from elsewhere, then trade in the other market to capture the gap. Those trades change the pool’s reserves and move its price back toward the outside price. The pool price can still move as trades and outside markets change.</p>
+<p><a href="https://ledgerlanefm.hashnode.dev/how-does-sunswap-work-pricing-routes-and-versions" rel="noopener">SunSwap</a> V2 uses constant-product pricing. SunSwap V3 adds concentrated liquidity: liquidity providers can place funds within chosen price ranges, creating more depth near the current price than V2 when liquidity is concentrated there. As the price moves beyond a range, that liquidity no longer contributes in the same way. This changes how much depth is available at a given price, while the reserve ratio remains the useful starting point for understanding a V2-style pool.</p>
+<h2>Related questions</h2>
+<h3>What is a liquidity pool?</h3>
+<p>A liquidity pool is a smart-contract-held balance of tokens that traders swap against. Its reserves provide the inventory used by the pricing rule.</p>
+<h3>What is the difference between an AMM and an order book?</h3>
+<p>An AMM calculates output from pool reserves and a formula. An order book displays offers from buyers and sellers, and a trade executes against available orders. The visible rate in an AMM comes from the pool’s changing balances.</p>
+<h3>What does an LP token represent?</h3>
+<p>An LP token represents a liquidity provider’s share in a pool under that pool’s rules. The provider supplies tokens to the pool and may receive a portion of its fees; the token is distinct from the pool’s swap price.</p></div>
+  <aside class="sf6772fe">
+    <h2 class="s1fbb41f">Related</h2>
+    <ul class="sdb65053">
+<li><a href="/how-do-bitcoin-bridges-handle-a-chain-reorganization/">How do Bitcoin bridges handle a chain reorganization?</a></li><li><a href="/us-wins-court-authority-over-1-2b-in-binance-theft/">US wins court authority over $1.2B in Binance theft</a></li><li><a href="/which-stablecoin-should-you-borrow-in-defi-for-your-destination/">Which stablecoin should you borrow in DeFi for your destination?</a></li><li><a href="/doj-obtains-seizure-authority-for-1-2b-in-binance-hack-funds/">DOJ obtains seizure authority for $1.2B in Binance hack funds</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s31dc7db">
+  <div class="sde009c0">
+    <p class="sf90387e">Finality</p>
+    <nav class="sf679732" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s854312d">Reporting and analysis — not a recommendation to buy or sell.</p>
+    <p class="s4bd746c">© 2026 Finality</p>
+  </div>
+</footer>
+</body>
+</html>
