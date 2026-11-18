@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Bitcoin Bridges Handle Reorganizations and Deposits</title>
+<meta name="description" content="How do Bitcoin bridges handle a chain reorganization? Confirmation depth lets the Bitcoin relay wait for a deposit to settle before it can mint tokens.">
+<link rel="canonical" href="https://digitalcryptonews.github.io/how-do-bitcoin-bridges-handle-a-chain-reorganization/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#0a0b13">
+<meta name="author" content="The Finality Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Finality">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How do Bitcoin bridges handle a chain reorganization?">
+<meta property="og:description" content="How do Bitcoin bridges handle a chain reorganization? Confirmation depth lets the Bitcoin relay wait for a deposit to settle before it can mint tokens.">
+<meta property="og:url" content="https://digitalcryptonews.github.io/how-do-bitcoin-bridges-handle-a-chain-reorganization/">
+<meta property="og:image" content="https://digitalcryptonews.github.io/assets/covers/how-do-bitcoin-bridges-handle-a-chain-reorganization-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How do Bitcoin bridges handle a chain reorganization?"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How do Bitcoin bridges handle a chain reorganization?">
+<meta name="twitter:description" content="How do Bitcoin bridges handle a chain reorganization? Confirmation depth lets the Bitcoin relay wait for a deposit to settle before it can mint tokens.">
+<meta property="article:published_time" content="2026-11-18T13:38:51+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/sf0c4226ca7.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Finality" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://digitalcryptonews.github.io/#website",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Finality reports crypto news: protocol upgrades, network incidents, exchange and stablecoin developments, regulation and the projects shaping blockchain."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://digitalcryptonews.github.io/how-do-bitcoin-bridges-handle-a-chain-reorganization/#webpage",
+      "url": "https://digitalcryptonews.github.io/how-do-bitcoin-bridges-handle-a-chain-reorganization/",
+      "name": "How Bitcoin Bridges Handle Reorganizations and Deposits",
+      "isPartOf": {
+        "@id": "https://digitalcryptonews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://digitalcryptonews.github.io/how-do-bitcoin-bridges-handle-a-chain-reorganization/#article",
+      "headline": "How do Bitcoin bridges handle a chain reorganization?",
+      "isAccessibleForFree": true,
+      "description": "How do Bitcoin bridges handle a chain reorganization? Confirmation depth lets the Bitcoin relay wait for a deposit to settle before it can mint tokens.",
+      "datePublished": "2026-11-18T13:38:51+00:00",
+      "dateModified": "2026-11-18T13:38:51+00:00",
+      "url": "https://digitalcryptonews.github.io/how-do-bitcoin-bridges-handle-a-chain-reorganization/",
+      "mainEntityOfPage": {
+        "@id": "https://digitalcryptonews.github.io/how-do-bitcoin-bridges-handle-a-chain-reorganization/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "wordCount": 777,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/how-do-bitcoin-bridges-handle-a-chain-reorganization-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/how-do-bitcoin-bridges-handle-a-chain-reorganization-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/how-do-bitcoin-bridges-handle-a-chain-reorganization-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://digitalcryptonews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How do Bitcoin bridges handle a chain reorganization?",
+          "item": "https://digitalcryptonews.github.io/how-do-bitcoin-bridges-handle-a-chain-reorganization/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://digitalcryptonews.github.io/#org",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://digitalcryptonews.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5310415" href="#main">Skip to content</a>
+<header class="s33420e7">
+  <div class="s6a0e32e">
+    <a class="s888ca35" href="/">Finality</a>
+    <p class="s9c11555">Crypto protocol and market news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s2df380e s80bd518">
+  <header class="s9285f16">
+    <h1 class="s8fadb46">How do Bitcoin bridges handle a chain reorganization?</h1>
+<p class="s8b5835b">How do Bitcoin bridges handle a chain reorganization? Confirmation depth lets the Bitcoin relay wait for a deposit to settle before it can mint tokens.</p>    <p class="s20d0529 s6761fa5"><span>The Finality Desk</span><time datetime="2026-11-18T13:38:51+00:00">Nov 18, 2026 · 13:38 UTC</time><span>4 min read</span><span>#72efb5</span></p>
+  </header>
+<figure class="sf48ee97"><img width="1200" height="630" fetchpriority="high" class="se782955" src="/assets/covers/how-do-bitcoin-bridges-handle-a-chain-reorganization.jpg" alt="How do Bitcoin bridges handle a chain reorganization?"></figure>  <div class="s6dbe647"><p>A Bitcoin bridge protects a deposit by waiting until it has enough confirmations on the most-work chain before minting tokens. That delay gives ordinary reorganizations time to resolve while the deposit is still unprocessed.</p>
+<h2>What is a Bitcoin chain reorganization?</h2>
+<p>A Bitcoin chain reorganization happens when nodes switch from one valid chain tip to another branch with more accumulated proof-of-work. The switch can remove blocks that were briefly part of the accepted chain, along with the transactions they contained.</p>
+<p>Say a deposit lands in block N. Around the same time, two miners find blocks extending the preceding tip, creating competing branches. The deposit’s block is on one branch; the other branch does not include it. When one branch gains more accumulated work, Bitcoin nodes follow that heavier branch. If it is the branch without the deposit, block N is dropped from the active chain.</p>
+<p>The dropped block is an orphaned block. The deposit transaction may return to the mempool, where it can be included in a later block. It can then confirm on the new active chain. If another transaction has spent the same Bitcoin, however, the original deposit may no longer be valid for inclusion.</p>
+<p>This is why a bridge needs more than proof that a transaction appeared in a block. It needs evidence that the block remains part of the chain it recognizes, with sufficient work built on top of it.</p>
+<h2>Confirmation depth gives the relay time to reject a dropped deposit</h2>
+<p>A Bitcoin bridge uses confirmation depth to delay minting until the deposit’s block has several later blocks above it. The relay follows Bitcoin headers and recognizes deposits only once they reach the required depth on the heaviest chain.</p>
+<p>In an SPV design, the relay tracks block headers rather than independently repeating every full-node validation task. It checks whether the deposit is included in a block on the tracked chain, then counts the subsequent blocks. The required depth is the bridge’s threshold for processing that deposit.</p>
+<p>Suppose the relay sees a deposit in block N but has not yet counted enough blocks on top. A competing branch overtakes the deposit’s branch before the threshold is reached. The relay updates its view to the heavier chain; because the deposit is no longer in that chain, it does not meet the processing condition. If the transaction later confirms on the new chain, it must build up the required depth there before the bridge processes it.</p>
+<p>That is the core causal link: added blocks make an alternative branch’s catch-up less likely, so waiting reduces the chance that a deposit accepted by the bridge will later be removed. The Bitcoin whitepaper describes an attacker’s probability of catching up as falling exponentially with each confirmation. This does not make a reorganization impossible; it makes a deeper one progressively harder.</p>
+<p>TeleSwap is a Bitcoin cross-chain bridge that uses on-chain transaction verification and collateralized lockers. For a reader, its SPV relay means a deposit must reach the required depth on the heaviest Bitcoin chain before it is processed. The linked <a href="https://proofdispatch.pages.dev/spv-proof-vs-multisig-who-verifies-a-bitcoin-deposit/" rel="noopener">TELE token</a> topic matters when considering what role the token plays in that reader’s situation; it does not change the confirmation rule for the Bitcoin deposit.</p>
+<p>Multisig attestation bridges face the same timing question through a different path. Their signers can wait for confirmations before signing an attestation that authorizes a bridged asset. If they sign too early, a later reorganization can remove the deposit they attested to. Confirmation depth is therefore a safety measure for both relay-based verification and signer-based verification.</p>
+<h2>Can a double-spent deposit still mint bridged BTC?</h2>
+<p>A deposit that is removed before it reaches the bridge’s required depth should not mint through that deposit path, because the relay no longer sees it at the necessary depth on the heaviest chain. If the transaction is still valid, it can return to the mempool, confirm again, and be processed once it builds up enough confirmations.</p>
+<p>A reorganization after the threshold has been reached is the residual risk. The bridge may already have processed the deposit, even though a deeper reorganization later removes its block. That risk is why larger amounts can justify longer confirmation waits: deeper burial lowers the chance of reversal, while the bridge must still choose a threshold that balances safety with waiting time.</p>
+<p>The practical distinction is whether the reorganization happens before or after the bridge’s threshold. Before it, the relay can discard the deposit from its tracked chain and wait for it to reconfirm. After it, the bridge has accepted the remaining risk that Bitcoin’s chain could reorganize more deeply.</p>
+<h2>Related</h2>
+<ul>
+<li>What is a Bitcoin chain reorganization?</li>
+<li>Can a double-spent deposit still mint bridged BTC?</li>
+</ul></div>
+  <aside class="sf6772fe">
+    <h2 class="s1fbb41f">Related</h2>
+    <ul class="sdb65053">
+<li><a href="/us-wins-court-authority-over-1-2b-in-binance-theft/">US wins court authority over $1.2B in Binance theft</a></li><li><a href="/which-stablecoin-should-you-borrow-in-defi-for-your-destination/">Which stablecoin should you borrow in DeFi for your destination?</a></li><li><a href="/doj-obtains-seizure-authority-for-1-2b-in-binance-hack-funds/">DOJ obtains seizure authority for $1.2B in Binance hack funds</a></li><li><a href="/which-chain-is-cheapest-to-swap-on-kyberswap-for-your-trade/">Which Chain Is Cheapest to Swap on KyberSwap for Your Trade?</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s31dc7db">
+  <div class="sde009c0">
+    <p class="sf90387e">Finality</p>
+    <nav class="sf679732" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s854312d">Reporting and analysis — not a recommendation to buy or sell.</p>
+    <p class="s4bd746c">© 2026 Finality</p>
+  </div>
+</footer>
+</body>
+</html>
