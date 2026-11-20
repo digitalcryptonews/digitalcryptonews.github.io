@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How liquidity pools set token prices: reserve ratios</title>
+<meta name="description" content="Liquidity pools set token prices through reserve ratios and a pricing curve; trade size, fees and active liquidity shape the swap quote you receive on TRON.">
+<link rel="canonical" href="https://digitalcryptonews.github.io/liquidity-pool-token-prices-how-reserves-set-a-quote/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#0a0b13">
+<meta name="author" content="The Finality Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Finality">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Liquidity pool token prices: How reserves set a quote">
+<meta property="og:description" content="Liquidity pools set token prices through reserve ratios and a pricing curve; trade size, fees and active liquidity shape the swap quote you receive on TRON.">
+<meta property="og:url" content="https://digitalcryptonews.github.io/liquidity-pool-token-prices-how-reserves-set-a-quote/">
+<meta property="og:image" content="https://digitalcryptonews.github.io/assets/covers/liquidity-pool-token-prices-how-reserves-set-a-quote-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Liquidity pool token prices: How reserves set a quote"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Liquidity pool token prices: How reserves set a quote">
+<meta name="twitter:description" content="Liquidity pools set token prices through reserve ratios and a pricing curve; trade size, fees and active liquidity shape the swap quote you receive on TRON.">
+<meta property="article:published_time" content="2026-11-20T14:32:14+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/sf0c4226ca7.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Finality" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://digitalcryptonews.github.io/#website",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Finality reports crypto news: protocol upgrades, network incidents, exchange and stablecoin developments, regulation and the projects shaping blockchain."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://digitalcryptonews.github.io/liquidity-pool-token-prices-how-reserves-set-a-quote/#webpage",
+      "url": "https://digitalcryptonews.github.io/liquidity-pool-token-prices-how-reserves-set-a-quote/",
+      "name": "How liquidity pools set token prices: reserve ratios",
+      "isPartOf": {
+        "@id": "https://digitalcryptonews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://digitalcryptonews.github.io/liquidity-pool-token-prices-how-reserves-set-a-quote/#article",
+      "headline": "Liquidity pool token prices: How reserves set a quote",
+      "isAccessibleForFree": true,
+      "description": "Liquidity pools set token prices through reserve ratios and a pricing curve; trade size, fees and active liquidity shape the swap quote you receive on TRON.",
+      "datePublished": "2026-11-20T14:32:14+00:00",
+      "dateModified": "2026-11-20T14:32:14+00:00",
+      "url": "https://digitalcryptonews.github.io/liquidity-pool-token-prices-how-reserves-set-a-quote/",
+      "mainEntityOfPage": {
+        "@id": "https://digitalcryptonews.github.io/liquidity-pool-token-prices-how-reserves-set-a-quote/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "wordCount": 897,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/liquidity-pool-token-prices-how-reserves-set-a-quote-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/liquidity-pool-token-prices-how-reserves-set-a-quote-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/liquidity-pool-token-prices-how-reserves-set-a-quote-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://digitalcryptonews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Liquidity pool token prices: How reserves set a quote",
+          "item": "https://digitalcryptonews.github.io/liquidity-pool-token-prices-how-reserves-set-a-quote/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://digitalcryptonews.github.io/#org",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://digitalcryptonews.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5310415" href="#main">Skip to content</a>
+<header class="s33420e7">
+  <div class="s6a0e32e">
+    <a class="s888ca35" href="/">Finality</a>
+    <p class="s9c11555">Crypto protocol and market news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s2df380e s80bd518">
+  <header class="s9285f16">
+    <h1 class="s8fadb46">Liquidity pool token prices: How reserves set a quote</h1>
+<p class="s8b5835b">Liquidity pools set token prices through reserve ratios and a pricing curve; trade size, fees and active liquidity shape the swap quote you receive on TRON.</p>    <p class="s20d0529 s6761fa5"><span>The Finality Desk</span><time datetime="2026-11-20T14:32:14+00:00">Nov 20, 2026 · 14:32 UTC</time><span>5 min read</span><span>#6b840d</span></p>
+  </header>
+<figure class="sf48ee97"><img width="1200" height="630" fetchpriority="high" class="se782955" src="/assets/covers/liquidity-pool-token-prices-how-reserves-set-a-quote.jpg" alt="Liquidity pool token prices: How reserves set a quote"></figure>  <div class="s6dbe647"><p>A liquidity pool sets its starting token price from the ratio of its reserves, then its pricing curve changes that price as a swap moves tokens in and out. In SunSwap V1 and V2, the constant-product rule governs that curve: a larger trade takes more of the available output token, so its average execution price moves further from the starting price.</p>
+<ul>
+<li>The reserve ratio gives the pool’s marginal price before a trade.</li>
+<li>The constant-product rule updates that price as reserves change.</li>
+<li>Trade size and the pool fee affect the amount received.</li>
+<li>SunSwap V3 uses concentrated liquidity, so liquidity active around the current price matters.</li>
+</ul>
+<p>A swap starts with two token reserves and an input amount. The pool applies its pricing curve, accounts for the fee, and returns an output amount; the changed reserves then set a new marginal price. On TRON, SunSwap uses pools for TRC-20 swaps. A quick explanation of <a href="https://digitalcryptonews.github.io/automated-market-makers-how-constant-product-pricing-works/">how SunSwap AMM rates work</a> can help put that pool quote in context.</p>
+<h2>The reserve ratio sets the starting price</h2>
+<p>The reserve ratio sets the marginal price: it tells you how many units of one token correspond to one unit of the other at the pool’s current state. Say a pool holds 100 TRX and 1,000 TRC-20 tokens. Its reserves show 10 tokens per TRX before a trade, before fees or price impact.</p>
+<p>That ratio depends on the order in which you name the tokens. With 100 TRX and 1,000 tokens, the ratio is 10 tokens per TRX. Reverse the order and it is 0.1 TRX per token. These are reciprocals, not different pool prices. When comparing a quote with a displayed price, confirm which token is the numerator and which is the denominator.</p>
+<p>Token decimals also affect how a ratio appears on screen. A token may be stored in smallest units while the interface displays whole tokens or a decimal fraction. Compare prices after accounting for each token’s displayed units; otherwise, the same reserve ratio can look off by powers of ten.</p>
+<p>SunSwap V1 and V2 use the constant-product formula <strong>x × y = k</strong>. Here, x and y are the quantities of the two tokens in the pool, and k is their product during the idealized trade calculation. When a swap adds one token and removes the other, the reserve quantities shift along that curve. The product rule means the pool must return progressively less output for each additional unit of input.</p>
+<h2>Trade size and fees shape the received amount</h2>
+<p>Trade size determines how far the swap moves the pool along its curve. Take the 100 TRX and 1,000 token pool and imagine swapping 10 TRX, ignoring fees to isolate the curve’s effect. The constant-product calculation leaves about 909.09 tokens in the pool, so the swap returns about 90.91 tokens. The average execution rate is about 9.09 tokens per TRX, below the starting 10.</p>
+<p>After that illustrative trade, the pool holds about 110 TRX and 909.09 tokens. Its marginal ratio is about 8.26 tokens per TRX, while the average rate received was about 9.09. The token reserve is smaller, so each remaining token costs more TRX at the margin. That gap between the starting marginal price and the average execution rate is the effect of trade size on the quote.</p>
+<p>The pool fee reduces the amount available to the swap, so the output is lower than the fee-free illustration. The precise quote depends on the trade size, the pool’s current reserves, its fee, and the pricing rules in use. A small trade generally consumes less of the available output reserve and has less price impact; a larger trade shifts the ratio further. The quote shown before confirmation is for the proposed amount, not a promise that every unit will trade at the starting marginal price.</p>
+<p>SunSwap V3 uses concentrated liquidity, which changes how pool depth is distributed. Liquidity providers can make liquidity active within selected price ranges. The available liquidity around the current price therefore matters to the quote; the total token balances alone do not describe the depth a swap can use. As a trade moves through price ranges, the active liquidity can change.</p>
+<p>Arbitrage traders can also move a pool’s price toward prices available elsewhere by buying the relatively cheaper token from the pool or selling the relatively more expensive one into it. Those trades alter reserves, which changes the ratio and the next quote. The pool’s displayed price is therefore the price implied by its current state, and trades can move that state when prices diverge.</p>
+<h2>Related</h2>
+<h3>What does a liquidity provider own in a pool?</h3>
+<p>A liquidity provider owns a position in the pool backed by the tokens they supplied, with a share of fees determined by the pool’s rules and their share of its liquidity. In a concentrated-liquidity pool, the price range they choose affects where that liquidity is available.</p>
+<h3>How does impermanent loss happen in a liquidity pool?</h3>
+<p>Impermanent loss arises when the relative market prices of the pooled tokens change after they are deposited. The pool’s pricing rules rebalance the token quantities as traders swap, so the provider’s position can differ in value from simply holding the original quantities outside the pool.</p>
+<p>Before confirming a swap, read the token order and units, then compare the quoted average rate with the pool’s starting ratio. That shows how much the proposed trade size and fee affect the output.</p></div>
+  <aside class="sf6772fe">
+    <h2 class="s1fbb41f">Related</h2>
+    <ul class="sdb65053">
+<li><a href="/does-a-multi-hop-swap-cost-more-gas-compare-your-route/">Does a Multi-Hop Swap Cost More Gas? Compare Your Route</a></li><li><a href="/delegated-staking-gives-validators-weight-not-token-control/">Delegated Staking Gives Validators Weight, Not Token Control</a></li><li><a href="/how-to-claim-a-polygon-pos-withdrawal-on-ethereum/">How to Claim a Polygon PoS Withdrawal on Ethereum</a></li><li><a href="/us-wins-authority-to-seize-or-restrain-1-2b-in-binance-funds-2/">US wins authority to seize or restrain $1.2B in Binance funds</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s31dc7db">
+  <div class="sde009c0">
+    <p class="sf90387e">Finality</p>
+    <nav class="sf679732" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s854312d">Reporting and analysis — not a recommendation to buy or sell.</p>
+    <p class="s4bd746c">© 2026 Finality</p>
+  </div>
+</footer>
+</body>
+</html>
