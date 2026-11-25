@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Is eth_subscribe in Ethereum WebSocket RPC? Live Events</title>
+<meta name="description" content="What is eth_subscribe in Ethereum WebSocket RPC? It opens a persistent connection that pushes live chain events, while leaving reconnection and missed-event recovery to you.">
+<link rel="canonical" href="https://digitalcryptonews.github.io/what-does-eth-subscribe-stream-over-ethereum-websocket-rpc/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#0a0b13">
+<meta name="author" content="The Finality Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Finality">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="What Does eth_subscribe Stream Over Ethereum WebSocket RPC?">
+<meta property="og:description" content="What is eth_subscribe in Ethereum WebSocket RPC? It opens a persistent connection that pushes live chain events, while leaving reconnection and missed-event recovery to you.">
+<meta property="og:url" content="https://digitalcryptonews.github.io/what-does-eth-subscribe-stream-over-ethereum-websocket-rpc/">
+<meta property="og:image" content="https://digitalcryptonews.github.io/assets/covers/what-does-eth-subscribe-stream-over-ethereum-websocket-rpc-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What Does eth_subscribe Stream Over Ethereum WebSocket RPC?"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What Does eth_subscribe Stream Over Ethereum WebSocket RPC?">
+<meta name="twitter:description" content="What is eth_subscribe in Ethereum WebSocket RPC? It opens a persistent connection that pushes live chain events, while leaving reconnection and missed-event recovery to you.">
+<meta property="article:published_time" content="2026-11-25T01:51:22+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/sf0c4226ca7.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Finality" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://digitalcryptonews.github.io/#website",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Finality reports crypto news: protocol upgrades, network incidents, exchange and stablecoin developments, regulation and the projects shaping blockchain."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://digitalcryptonews.github.io/what-does-eth-subscribe-stream-over-ethereum-websocket-rpc/#webpage",
+      "url": "https://digitalcryptonews.github.io/what-does-eth-subscribe-stream-over-ethereum-websocket-rpc/",
+      "name": "What Is eth_subscribe in Ethereum WebSocket RPC? Live Events",
+      "isPartOf": {
+        "@id": "https://digitalcryptonews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://digitalcryptonews.github.io/what-does-eth-subscribe-stream-over-ethereum-websocket-rpc/#article",
+      "headline": "What Does eth_subscribe Stream Over Ethereum WebSocket RPC?",
+      "isAccessibleForFree": true,
+      "description": "What is eth_subscribe in Ethereum WebSocket RPC? It opens a persistent connection that pushes live chain events, while leaving reconnection and missed-event recovery to you.",
+      "datePublished": "2026-11-25T01:51:22+00:00",
+      "dateModified": "2026-11-25T01:51:22+00:00",
+      "url": "https://digitalcryptonews.github.io/what-does-eth-subscribe-stream-over-ethereum-websocket-rpc/",
+      "mainEntityOfPage": {
+        "@id": "https://digitalcryptonews.github.io/what-does-eth-subscribe-stream-over-ethereum-websocket-rpc/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "wordCount": 912,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/what-does-eth-subscribe-stream-over-ethereum-websocket-rpc-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/what-does-eth-subscribe-stream-over-ethereum-websocket-rpc-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/what-does-eth-subscribe-stream-over-ethereum-websocket-rpc-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://digitalcryptonews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "What Does eth_subscribe Stream Over Ethereum WebSocket RPC?",
+          "item": "https://digitalcryptonews.github.io/what-does-eth-subscribe-stream-over-ethereum-websocket-rpc/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://digitalcryptonews.github.io/#org",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://digitalcryptonews.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5310415" href="#main">Skip to content</a>
+<header class="s33420e7">
+  <div class="s6a0e32e">
+    <a class="s888ca35" href="/">Finality</a>
+    <p class="s9c11555">Crypto protocol and market news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s2df380e s80bd518">
+  <header class="s9285f16">
+    <h1 class="s8fadb46">What Does eth_subscribe Stream Over Ethereum WebSocket RPC?</h1>
+<p class="s8b5835b">What is eth_subscribe in Ethereum WebSocket RPC? It opens a persistent connection that pushes live chain events, while leaving reconnection and missed-event recovery to you.</p>    <p class="s20d0529 s6761fa5"><span>The Finality Desk</span><time datetime="2026-11-25T01:51:22+00:00">Nov 25, 2026 · 01:51 UTC</time><span>5 min read</span><span>#3471c6</span></p>
+  </header>
+<figure class="sf48ee97"><img width="1200" height="630" fetchpriority="high" class="se782955" src="/assets/covers/what-does-eth-subscribe-stream-over-ethereum-websocket-rpc.jpg" alt="What Does eth_subscribe Stream Over Ethereum WebSocket RPC?"></figure>  <div class="s6dbe647"><p>What is eth_subscribe in Ethereum JSON-RPC? It is a method that opens a live event stream over WebSocket, pushing new heads, matching logs or pending transactions as they occur. It replaces repeated polling with server push, but the client must restore the stream and recover missed events after a disconnect.</p>
+<h2>eth_subscribe pushes matching events over WebSocket</h2>
+<p>eth_subscribe sends a subscription request to an Ethereum node over a persistent WebSocket connection. The node returns a subscription ID, then sends matching updates as JSON-RPC notifications named eth_subscription. Each notification carries that ID, so the client can associate the event with the right subscription. The stream ends when the client calls eth_unsubscribe or the connection drops.</p>
+<p>The endpoint must use wss:// for a secure WebSocket connection; an HTTPS RPC endpoint is a different transport. <a href="https://dune.com/polly_bnb/what-does-no-tracking-mean-on-an-rpc-endpoint-data-collection" rel="noopener">Chainlist</a> adds useful background by describing EVM networks and their RPC endpoints, including WebSocket endpoints separately from HTTPS ones.</p>
+<p>Geth documents three common subscription types. newHeads reports new block headers, logs reports matching log entries, and newPendingTransactions reports pending transaction hashes. A subscription is a live feed, not a request for the node to return a historical range of events.</p>
+<p>The message flow has three stages. First, the client sends eth_subscribe with a type and, where relevant, a filter. Next, the node responds with a subscription ID. Then the node pushes eth_subscription notifications until the client unsubscribes or loses the socket. The client should keep the ID for the active connection and use it to end that subscription with eth_unsubscribe.</p>
+<h2>A token log subscription filters by address and topic</h2>
+<p>A logs subscription can filter for events from one token contract and for its Transfer event. The request supplies the contract address and a topics filter containing the Transfer event signature. Each matching log arrives as a pushed eth_subscription message, with the contract address, topics and event data. The filter narrows which logs the node sends; it does not change what the token contract emits.</p>
+<p>Illustrative before and after: before the subscription, an application asks for logs repeatedly with separate polling requests and sees new matches only when it polls. After it opens the WebSocket subscription, the same token and Transfer filter stay in place while the node pushes each match. The event data is the same kind of log; what changes is how the application receives it.</p>
+<p>That stream is useful for live token activity, dashboards and services reacting to contract events. It does not guarantee that every event reaches the application. A socket can close, and subscriptions end with it. The node does not replay notifications missed while the client was disconnected.</p>
+<h2>Reconnects require resubscribing and backfilling</h2>
+<p>After a disconnect, the client must open a new WebSocket, create the subscription again and use eth_getLogs to retrieve the gap. Store the last fully processed block number as the stream runs. Once reconnected, query eth_getLogs with the same address and topic filter from the next block after that saved number through a recent block, then resume processing live notifications.</p>
+<p>The order matters: establish the new subscription, backfill the gap, and reconcile any overlap between historical results and live notifications. Keep processing safe to repeat, since recovery can return a log the application has already handled. Advance the saved block only after the application has finished processing the relevant events for it. That record gives the next recovery a reliable starting point.</p>
+<p>For log subscriptions, a notification can include a removed flag. When it is true, the log was removed from the current chain view, typically during a reorganization; it should not remain treated as a canonical event. Update any state derived from it, then process the replacement chain’s logs. A live feed reports changes as the node sees them, so applications that need a consistent history must account for these reversals.</p>
+<h2>Related questions</h2>
+<h3>eth_subscribe vs eth_newFilter polling</h3>
+<p>eth_subscribe pushes matching updates over WebSocket as they occur. eth_newFilter creates a filter that the client checks by polling, commonly with eth_getFilterChanges. The first reduces repeated requests for live updates; the second makes the client responsible for checking. Neither removes the need to recover a gap with historical log queries after a connection or polling interruption.</p>
+<h3>What does the removed flag mean in log notifications?</h3>
+<p>The removed flag marks a log that was previously reported but no longer belongs to the node’s current chain view. Treat it as a correction: reverse any derived action based on that log and apply logs from the replacement chain. Persisting the processed block and reconciling after reconnect helps keep the application’s event history aligned with the chain.</p>
+<h2>Follow-up questions</h2>
+<h3>How many subscriptions can one WebSocket connection hold?</h3>
+<p>There is no single subscription count to rely on across Ethereum nodes and RPC providers. Capacity depends on the client and service limits, as well as the resources used by the filters and notification volume. Check the limits of the endpoint you operate or use, and monitor connection errors and lag.</p>
+<h3>Can a dapp use eth_subscribe through a browser wallet?</h3>
+<p>Only when the wallet’s provider exposes the method and supports the required WebSocket subscription transport. A dapp should not assume that an injected browser wallet provider supports eth_subscribe; its available methods depend on the wallet. A dapp can instead connect to a WebSocket RPC endpoint directly, while handling that connection and its recovery itself.</p>
+<p>eth_subscribe gives developers low-latency updates by keeping a WebSocket stream open. Because notifications are not replayed after disconnection, reliable consumers must save progress, resubscribe and backfill with eth_getLogs.</p></div>
+  <aside class="sf6772fe">
+    <h2 class="s1fbb41f">Related</h2>
+    <ul class="sdb65053">
+<li><a href="/is-the-sui-bridge-safe-when-your-balance-is-missing/">Is the Sui Bridge safe when your balance is missing?</a></li><li><a href="/how-to-check-token-liquidity-before-swapping-on-a-dex/">How to check token liquidity before swapping on a DEX</a></li><li><a href="/how-do-i-tell-whether-a-zksync-era-token-is-fake/">How do I tell whether a zkSync Era token is fake?</a></li><li><a href="/hong-kong-bill-targets-four-crypto-service-lines/">Hong Kong bill targets four crypto service lines</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s31dc7db">
+  <div class="sde009c0">
+    <p class="sf90387e">Finality</p>
+    <nav class="sf679732" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s854312d">Reporting and analysis — not a recommendation to buy or sell.</p>
+    <p class="s4bd746c">© 2026 Finality</p>
+  </div>
+</footer>
+</body>
+</html>
