@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TWAP order vs limit order: choose by price or exit</title>
+<meta name="description" content="TWAP order vs limit order for selling a large token position: use TWAP when a full exit matters; choose a limit order when your minimum price matters more.">
+<link rel="canonical" href="https://digitalcryptonews.github.io/twap-order-vs-limit-order-choose-between-exit-and-price/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#0a0b13">
+<meta name="author" content="The Finality Desk"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Finality">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="TWAP order vs limit order: choose between exit and price">
+<meta property="og:description" content="TWAP order vs limit order for selling a large token position: use TWAP when a full exit matters; choose a limit order when your minimum price matters more.">
+<meta property="og:url" content="https://digitalcryptonews.github.io/twap-order-vs-limit-order-choose-between-exit-and-price/">
+<meta property="og:image" content="https://digitalcryptonews.github.io/assets/covers/twap-order-vs-limit-order-choose-between-exit-and-price-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TWAP order vs limit order: choose between exit and price"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TWAP order vs limit order: choose between exit and price">
+<meta name="twitter:description" content="TWAP order vs limit order for selling a large token position: use TWAP when a full exit matters; choose a limit order when your minimum price matters more.">
+<meta property="article:published_time" content="2026-11-26T19:02:51+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/sf0c4226ca7.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Finality" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://digitalcryptonews.github.io/#website",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "inLanguage": "en",
+      "description": "Finality reports crypto news: protocol upgrades, network incidents, exchange and stablecoin developments, regulation and the projects shaping blockchain."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://digitalcryptonews.github.io/twap-order-vs-limit-order-choose-between-exit-and-price/#webpage",
+      "url": "https://digitalcryptonews.github.io/twap-order-vs-limit-order-choose-between-exit-and-price/",
+      "name": "TWAP order vs limit order: choose by price or exit",
+      "isPartOf": {
+        "@id": "https://digitalcryptonews.github.io/#website"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://digitalcryptonews.github.io/twap-order-vs-limit-order-choose-between-exit-and-price/#article",
+      "headline": "TWAP order vs limit order: choose between exit and price",
+      "isAccessibleForFree": true,
+      "description": "TWAP order vs limit order for selling a large token position: use TWAP when a full exit matters; choose a limit order when your minimum price matters more.",
+      "datePublished": "2026-11-26T19:02:51+00:00",
+      "dateModified": "2026-11-26T19:02:51+00:00",
+      "url": "https://digitalcryptonews.github.io/twap-order-vs-limit-order-choose-between-exit-and-price/",
+      "mainEntityOfPage": {
+        "@id": "https://digitalcryptonews.github.io/twap-order-vs-limit-order-choose-between-exit-and-price/#webpage"
+      },
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://digitalcryptonews.github.io/#org"
+      },
+      "wordCount": 970,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/twap-order-vs-limit-order-choose-between-exit-and-price-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/twap-order-vs-limit-order-choose-between-exit-and-price-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://digitalcryptonews.github.io/assets/covers/twap-order-vs-limit-order-choose-between-exit-and-price-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://digitalcryptonews.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "TWAP order vs limit order: choose between exit and price",
+          "item": "https://digitalcryptonews.github.io/twap-order-vs-limit-order-choose-between-exit-and-price/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://digitalcryptonews.github.io/#org",
+      "name": "Finality",
+      "url": "https://digitalcryptonews.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://digitalcryptonews.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://digitalcryptonews.github.io/editorial-policy/"
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s5310415" href="#main">Skip to content</a>
+<header class="s33420e7">
+  <div class="s6a0e32e">
+    <a class="s888ca35" href="/">Finality</a>
+    <p class="s9c11555">Crypto protocol and market news</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s2df380e s80bd518">
+  <header class="s9285f16">
+    <h1 class="s8fadb46">TWAP order vs limit order: choose between exit and price</h1>
+<p class="s8b5835b">TWAP order vs limit order for selling a large token position: use TWAP when a full exit matters; choose a limit order when your minimum price matters more.</p>    <p class="s20d0529 s6761fa5"><span>The Finality Desk</span><time datetime="2026-11-26T19:02:51+00:00">Nov 26, 2026 · 19:02 UTC</time><span>5 min read</span><span>#b2b2fd</span></p>
+  </header>
+<figure class="sf48ee97"><img width="1200" height="630" fetchpriority="high" class="se782955" src="/assets/covers/twap-order-vs-limit-order-choose-between-exit-and-price.jpg" alt="TWAP order vs limit order: choose between exit and price"></figure>  <div class="s6dbe647"><p>For a large token position, a TWAP order works better when you need to exit fully over time; a limit order fits when you would rather wait than sell below a set price. CoW Swap offers both order types through <a href="https://cowswap.us" rel="noopener">cowswap</a>, but they manage different risks: a TWAP spreads execution to reduce price impact, while a limit order sets a minimum sale price. The choice is between prioritising an exit and prioritising price.</p>
+<h2>What matters when choosing an order for a large sale?</h2>
+<p><strong>Price impact:</strong> A single large sale can move a pool’s price against you as it uses available liquidity. Splitting the sale into smaller parts gives liquidity time to refill between executions, which can reduce the impact of each part. A TWAP order splits the total into equal parts executed at fixed intervals. A limit order sets a price condition; it does not schedule smaller sales across time.</p>
+<p><strong>Price certainty:</strong> A limit order fixes the minimum price you will accept. It fills only at or above that price, so you can set a floor and wait for the market to reach it. A TWAP order fixes the schedule instead. Each part sells at the market price available at its interval, subject to the order’s price protection. That means the sale can continue as the market moves, but the price of each part can vary.</p>
+<p><strong>Certainty of exit:</strong> A TWAP is better suited to a planned sale that needs to complete over time, as it submits parts according to its schedule. A limit order may fill all at once, fill partly, or remain unfilled if the market does not reach your price. A limit order therefore protects your floor, while a TWAP gives the sale a timetable. Neither choice makes the trade’s outcome independent of market conditions.</p>
+<p>Consider a constructed case: you want to sell 100 ETH. With a 10-part TWAP, each part is 10 ETH, and the sale runs over hours according to its interval. Smaller trades can give pool liquidity time to refill between parts. With a limit order at your chosen price, some or all of the 100 ETH may sell immediately if the price is available; otherwise, it may wait or fill only in part. The first option prioritises an orderly exit over time, while the second prioritises the price floor.</p>
+<p><strong>Market depth:</strong> Before choosing, examine the liquidity available around the price you consider fair and ask how a sale of your size would affect the pool. If there is enough depth for the position to trade near that target, a limit order can suit you: it may fill without accepting a lower price. If the pool is thin and a single sale would create substantial price impact, a TWAP can spread execution across intervals. The observation leads to a practical decision: deep liquidity plus a fair target favours a limit; thin liquidity plus a need to sell favours a TWAP.</p>
+<p><strong>Wallet requirement:</strong> On cowswap, a TWAP order requires a Safe wallet. Limit orders are signed and gasless to place, and any wallet can place one. So wallet access can decide the available route: if you do not use a Safe, a limit order is the option among these two that you can place.</p>
+<p>Choose a TWAP when you need to exit fully and can accept the market price available at each interval, within its price protection. Choose a limit order when price matters more than timing and you can leave tokens waiting for your minimum. In a steady fall, the difference becomes clear: a TWAP keeps selling each scheduled part at the lower market price, while a limit order at a higher floor waits unfilled. The trade-off is a scheduled sale versus a price floor, not a promise of both.</p>
+<p>To make a TWAP easier to plan, divide the total amount by the number of parts to get each part’s size, then multiply the number of parts by the interval to estimate total duration. For instance, 100 ETH split into 10 parts means 10 ETH per part. Set the interval with the time you can allow for the sale in mind. This simple calculation makes the schedule easier to compare with your exit deadline and helps avoid choosing a plan whose duration does not fit.</p>
+<h2>Related questions</h2>
+<h3>What is a TWAP order in crypto?</h3>
+<p>A TWAP order splits a trade into equal parts and executes them at fixed intervals. For a large token sale, the aim is to spread execution over time rather than send the whole amount in one trade.</p>
+<h3>Do limit orders on cowswap cost gas?</h3>
+<p>Limit orders on CoW Swap are signed and gasless to place. They specify a minimum price and fill only when the market can meet that condition.</p>
+<h3>How long should a TWAP order run?</h3>
+<p>A TWAP’s total duration depends on its number of parts and interval: multiply the two to estimate the run time. Choose a schedule that gives the sale time to execute while still matching your need to exit.</p>
+<h2>More questions about large sales</h2>
+<h3>Can I cancel a TWAP order partway through?</h3>
+<p>Cancellation depends on the order controls available for the TWAP. Check the active order’s controls before relying on a schedule, especially if your sale plan may change.</p>
+<h3>What happens to unsold tokens when a limit order expires?</h3>
+<p>Any tokens that did not sell remain unsold when the order expires. You can then decide whether to place another order at a revised price or use a different sale approach.</p>
+<h3>Is an OTC desk better than TWAP for very large sales?</h3>
+<p>An OTC desk may be worth comparing for a very large sale, since the relevant question is how its available liquidity and terms compare with splitting execution across a TWAP. Compare the expected price and the certainty of completing the sale before choosing.</p></div>
+  <aside class="sf6772fe">
+    <h2 class="s1fbb41f">Related</h2>
+    <ul class="sdb65053">
+<li><a href="/eu-proposal-targets-russian-crypto-rails-and-60-banks/">EU proposal targets Russian crypto rails and 60 banks</a></li><li><a href="/aave-app-opens-to-the-public-after-early-access-tops-63-million/">Aave App opens to the public after early access tops $63 million</a></li><li><a href="/what-is-gwei-read-your-wallets-gas-cost/">What Is Gwei? Read Your Wallet’s Gas Cost</a></li><li><a href="/liquidity-pool-and-lock-and-mint-bitcoin-bridges/">Liquidity Pool and Lock-and-Mint Bitcoin Bridges</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s31dc7db">
+  <div class="sde009c0">
+    <p class="sf90387e">Finality</p>
+    <nav class="sf679732" aria-label="Site">
+      <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">Masthead</a></li><li><a href="/privacy/">Privacy &amp; terms</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>      </ul>
+    </nav>
+    <p class="s854312d">Reporting and analysis — not a recommendation to buy or sell.</p>
+    <p class="s4bd746c">© 2026 Finality</p>
+  </div>
+</footer>
+</body>
+</html>
